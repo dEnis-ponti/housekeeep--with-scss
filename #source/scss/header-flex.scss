@@ -1,0 +1,182 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+}
+.header__top {
+    background: linear-gradient(90deg, #443682 14.58%, #28418A 39.75%, #00669C 68.41%);
+  .top__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1410px;
+    padding: 35px 0 25px 0;
+    margin-left: 7.29%;
+    margin-right: 7.29%;
+    @include fullhdUp {
+      margin: 0 auto;
+    }
+    @include tabletDown {
+      padding: 23px 15px 29px 15px;
+      margin: 0;
+    }
+    & > * {
+      align-self: center;
+    }
+      .logo {
+        display: flex;
+        .logo-pic {
+          @include tabletDown {
+            width: 66px;
+          }
+        }
+        .logo__caption {
+          display: flex;
+          flex-direction: column;
+          align-self: center;
+          margin-left: 24px;
+          @include tabletDown {
+            margin-left: 14px;
+          }
+          span {
+            display: inline-block;
+          }
+          .company-title {
+            @extend %fontLogoTitle;
+          }
+          .company-slogan {
+            @extend %fontLogoSlogan;
+          }
+        }
+      }
+      .socials {
+        display: flex;
+        margin-left: 15px;
+        @include tabletDown {
+          flex: 1 0 151px;
+          order: 3;
+          margin: 6px 0 0 80px;
+        }
+        & > .socials__item:not(:first-child) {
+          margin-left: 11px;
+          @include tabletDown {
+            margin-left: 9px;
+          }
+        }
+        .socials__item img {
+          @include tabletDown {
+            width: 23px;
+          }
+        }
+      }
+      .time {
+        display: flex;
+        @include tabletDown {
+          order: 4;
+        }
+        & > * {
+          display: inline-block;
+          align-self: center;
+        }
+        .time__title {
+          display: flex;
+          flex: 1 0 190px;
+          margin-left: 15px;
+          @include tabletDown {
+            flex: auto;
+            margin: 0;
+          }
+          & > * {
+            display: inline-block;
+            align-self: center;
+          }
+          .time-caption {
+            padding-left: 10px;
+            @extend %fontTimeTitle;
+            @include tabletDown{
+              display: none;
+            }
+          }
+          .clock-icon {
+            width: 30px;
+            height: 30px;
+            @include tabletDown{
+              width: 21px;
+              height: 21px;
+            }
+          }
+        }
+        .time__work-hours {
+          display: flex;
+          flex: 1 0 164px;
+          flex-direction: column;
+          margin-left: 27px;
+          @include tabletDown {
+            margin-left: 16px;
+          }
+          @extend %fontWorkHours;
+        }
+      }
+      .telephone {
+        display: flex;
+        @include tabletDown {
+          order: 2;
+        }
+        .tel-number {
+          position: relative;
+          margin-left: 40px;
+        }
+
+        .tel-number:before {
+          content: url('/img/icons/telephone.svg');
+          width: 14px;
+          height: 14px;
+          position: absolute;
+          display: inline-block;
+          top: -2px;
+          left: -25px;
+
+        }
+
+        .tel-number,
+        .telephone__button {
+          @extend %fontTelNumber;
+          align-self: center;
+        }
+
+        .telephone__button {
+          margin-left: 16px;
+          @extend %callBtn;
+        }
+      }
+    }
+}
+.header__menu {
+  min-height: 81px;
+  max-width: 1170px;
+  padding: 31px 65px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 0px 0px 20px 20px;
+  text-align: center;
+  @include tabletDown {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 16px;
+    padding: 31px 12px;
+  }
+  .nav-menu__link {
+    transition: all 1s;
+    @extend %fontNavMenu;
+  }
+  .nav-menu__link:not(:first-child) {
+    margin-left: 63px;
+    @include tabletDown {
+      margin-left: 0;
+    }
+  }
+  .nav-menu__link:hover {
+    border-bottom: 1px solid #000;
+    padding-bottom: 2px;
+  }
+}

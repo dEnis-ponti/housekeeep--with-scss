@@ -1,0 +1,9 @@
+@mixin fullhdUp {
+  @media (min-width:1921px) { @content; }
+}
+@mixin tabletDown{
+  @media (max-width:920px) { @content; }
+}
+@mixin mobileDown {
+  @media (max-width:620px) { @content; }
+}

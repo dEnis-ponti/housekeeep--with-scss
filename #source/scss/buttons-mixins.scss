@@ -1,0 +1,24 @@
+@import "media-mixins.scss";
+
+%callBtn{
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  padding: 13px 21px;
+  @include tabletDown {
+    padding: 11px 20px;
+  }
+}
+
+%orderBtn{
+  background-color: #FF880F;
+  padding: 21px 60px;
+  box-shadow: 2px 8px 30px #FF880F;
+  border-radius: 10px;
+}
+
+%askBtn{
+  background: #FF880F;
+  padding: 21px 56px;
+  box-shadow: 2px 4px 20px rgba(255, 136, 15, 0.5);
+  border-radius: 10px;
+}

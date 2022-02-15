@@ -1,0 +1,159 @@
+// Первый Экран-----------------------------------------------------------------------------
+.intro-section {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.intro__background {
+  background-image: url("../img/bg/1screen-d.jpg");
+  background-position: center 25px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  @include fullhdUp {
+    background-size: cover;
+    background-position: center 0px;
+  }
+}
+
+.content__container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.intro__top {
+  padding-top: 190+150px;
+  max-width: 520px;
+  & > * {
+    display: inline-block;
+  }
+  .main-title {
+    @extend %fontMainTitle;
+  }
+  .main-title__caption {
+    margin-top: 40px;
+    @extend %fontMainAdvantages;
+    .caption__item {
+      list-style: inside;
+      list-style-position: inside;
+    }
+  }
+  .order-btn {
+    margin-top: 40px;
+    @extend %fontContentBtn;
+    @extend %orderBtn
+  }
+}
+
+.intro__bottom {
+  .benefits {
+    margin-top: 320px;
+    display: flex;
+    justify-content: space-between;
+    @include tabletDown {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 562px;
+      margin: 320px auto 0 auto;
+    }
+    .benefits__item {
+      background: linear-gradient(180deg, #A6DBF5 0%, #451874 97.92%);
+      border-radius: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 262px;
+      height: 280px;
+      & > * {
+        display: inline-block;
+      }
+      .item__pic {
+        align-self: center;
+        position: relative;
+        width: 97px;
+        height: 97px;
+        background: #FFFFFF;
+        border-radius: 50%;
+      }
+      .item__pic img{
+        width: 77.31%;
+        height: 77.31%;
+        margin: 11.34%;
+      }
+      .item__caption {
+        margin-top: 30px;
+        text-align: center;
+        @extend %fontBenefits;
+      }
+    }
+    .benefits__item:not(:first-child) {
+      margin-left: 38px;
+      @include tabletDown {
+        margin-left: 0;
+      }
+    }
+    .benefits__item:nth-child(3),
+    .benefits__item:nth-child(4) {
+      @include tabletDown {
+        margin-top: 34px;
+      }
+    }
+  }
+}
+
+// Секция "Вопрос"-----------------------------------------------------------------------
+.ask-section {
+  margin-top: 28px;
+  padding: 100px 0;
+  background-image: url("../img/bg/askpricestar.png");
+  background-position: 60%;
+  background-repeat: no-repeat;
+  background-size: 378px 779px;
+  .content__container--ask {
+    max-width: 1920px;
+    max-height: 702px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    display: flex;
+  }
+  .ask-section__pic {
+    position: relative;
+    flex: 0 1 100%;
+    max-width: 50%;
+    
+    min-height: 267px;
+    transform: translateX(-15px);
+    left: -15px;
+    top: 0;
+    img {
+    width: 100%;
+    }
+  }
+  .ask-section__text {
+    margin-left: 1%;
+    padding-top: 11%;
+    max-width: 570px;
+    & > * {
+      display: inline-block;
+    }
+    & > *:not(:first-child) {
+      margin-top: 35px;
+    }
+    .text__title {
+      @extend %fontAskTitle;
+    }
+    .title__caption {
+      @extend %fontAscCaption;
+    }
+    .ask-btn {
+      @extend %fontContentBtn;
+      @extend %askBtn;
+    }
+  }
+}

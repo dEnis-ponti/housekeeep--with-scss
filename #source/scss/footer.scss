@@ -1,0 +1,25 @@
+.footer {
+  background-color: #000000;
+}
+.footer-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 74px auto;
+  @include tabletDown {
+    margin: 40px auto;
+  }
+}
+
+.copyright {
+  span {
+    @extend %fontCopyFooter;
+  }
+  .site-name {
+    text-align: center;
+  }
+  .site-name span:last-child {
+    margin-left: 20px;
+  }
+}

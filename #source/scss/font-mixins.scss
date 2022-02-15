@@ -1,0 +1,63 @@
+@import "media-mixins.scss";
+
+@mixin fontValue($f,$w,$st,$s,$lh,$c){
+  font-family: $f;
+  font-weight: $w;
+  font-style: $st;
+  font-size: $s;
+  line-height: $lh;
+  color: $c;
+}
+
+$clrWhite:#ffffff;
+$clrBlack:#000000;
+$clrGrey:#8B8B8B;
+
+// Хедер
+%fontLogoTitle{
+  @include fontValue("Roboto", 700, normal, 1.4285rem, 23.44px, $clrWhite);
+}
+%fontLogoSlogan {
+  @include fontValue("Roboto", 500, normal, 1.285rem, 21.09px, $clrWhite);
+}
+%fontTimeTitle {
+  @include fontValue("Roboto", 400, normal, 1.4285rem, 23.44px, $clrWhite);
+}
+%fontWorkHours {
+  @include fontValue("Roboto", 400, normal, 1.0714rem, 17.58px, $clrWhite);
+  @include tabletDown {
+    @include fontValue("Roboto", 400, normal, 0.9285rem, 15.23px, $clrWhite);
+  }
+}
+%fontTelNumber {
+  @include fontValue("Roboto", 500, normal, 1.0714rem, 17.58px, $clrWhite);
+}
+%fontNavMenu {
+  @include fontValue("Roboto", 500, normal, 1.1428rem, 18.75px, $clrBlack);
+}
+// Футер
+%fontCopyFooter {
+  @include fontValue("Roboto", 400, normal, 1.4285rem, 23.44px, $clrWhite);
+    @include tabletDown {
+      @include fontValue("Roboto", 400, normal, 1.0714rem, 17.58px, $clrGrey);
+    }
+}
+// Контент
+%fontMainTitle {
+  @include fontValue("Roboto", 700, normal, 2.7857rem, 45.7px, $clrWhite);
+}
+%fontMainAdvantages {
+  @include fontValue("Roboto", 500, normal, 1.4285rem, 23.94px, $clrWhite);
+}
+%fontContentBtn {
+  @include fontValue("Roboto", 700, normal, 1.4285rem, 18.75px, $clrWhite);
+}
+%fontBenefits {
+  @include fontValue("Roboto", 700, normal, 1.0714rem, 17.58px, $clrWhite);
+}
+%fontAskTitle {
+  @include fontValue("Roboto", 500, normal, 2rem, 33.51px, $clrBlack);
+}
+%fontAscCaption {
+  @include fontValue("Roboto", 500, normal, 1.0714rem, 17.95px, $clrBlack);
+}

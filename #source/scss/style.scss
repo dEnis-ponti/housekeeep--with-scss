@@ -1,0 +1,17 @@
+@import "nullstyle.scss";
+@import "font-mixins.scss";
+@import "buttons-mixins.scss";
+@import "media-mixins.scss";
+@import "header-flex.scss";
+@import "main.scss";
+@import "footer.scss";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
