@@ -114,6 +114,11 @@
   background-position: 60%;
   background-repeat: no-repeat;
   background-size: 378px 779px;
+  @include tabletDown {
+    background-image: url("../img/bg/askpricestar_tablet.png");
+    background-position: 100%;
+    background-size: 198px 461px;
+  }
   .content__container--ask {
     max-width: 1920px;
     max-height: 702px;

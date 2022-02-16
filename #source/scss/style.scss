@@ -2,16 +2,20 @@
 @import "font-mixins.scss";
 @import "buttons-mixins.scss";
 @import "media-mixins.scss";
-@import "header-flex.scss";
-@import "main.scss";
-@import "footer.scss";
 
 .wrapper {
+  min-height: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .content {
   flex: 1 1 auto;
 }
+
+@import "header-flex.scss";
+@import "main.scss";
+@import "footer.scss";
 
