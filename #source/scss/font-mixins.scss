@@ -58,6 +58,18 @@ $clrGrey:#8B8B8B;
 %fontAskTitle {
   @include fontValue("Roboto", 500, normal, 2rem, 33.51px, $clrBlack);
 }
-%fontAscCaption {
+%fontAskCaption {
   @include fontValue("Roboto", 500, normal, 1.0714rem, 17.95px, $clrBlack);
+}
+%fontServicesTitle {
+  @include fontValue("Roboto", 700, normal, 2rem, 32.81px, $clrBlack);
+}
+%fontServicesSubTitle {
+  @include fontValue("Roboto", 700, normal, 1.5714rem, 25.78px, $clrBlack);
+}
+%fontServicesPriceValue {
+  @include fontValue("Roboto", 700, normal, 3.9285rem, 64.45px, $clrWhite);
+}
+%fontServicesPriceCurrency {
+  @include fontValue("Roboto", 700, normal, 2rem, 15px, $clrWhite);
 }

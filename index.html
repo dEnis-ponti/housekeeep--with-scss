@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Housekeep</title>
 </head>
@@ -106,12 +109,25 @@
   </section>
   <section class="services-cost">
     <div class="content__container">
-      <h2 class="services-cost__headline">Стоимость услуг</h2>
+      <h2 class="services-cost__title">Стоимость услуг</h2>
       <div class="servieces-cost__diagnostic">
         <h3 class="diagnostic__subtitle">Диагностика</h3>
         <div class="diagnostic__vars">
-          <div class="diagnostic-var"></div>
-          <div class="diagnostic-var"></div>
+          <div class="diagnostic-var">
+            <img src="/img/diagnostic-with-repair.png" alt="">
+            <div class="diagnostic-var__price"><div class="price__value">
+              <span>0</span><br><span>руб</span></div></div>
+            </div>
+          <div class="diagnostic-var">
+              <img src="/img/diagnostic-without-repair.png" alt="">
+            <div class="diagnostic-var__price">
+              <div class="price__inner">
+                <p class="price__value">
+                  <span>400</span><br><span>руб</span>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <h3 class="services-cost__subtitle">Цены на ремонт</h3>
