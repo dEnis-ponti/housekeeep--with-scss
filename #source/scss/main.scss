@@ -109,11 +109,11 @@
 // Секция "Вопрос"-----------------------------------------------------------------------
 .ask-section {
   margin-top: 28px;
-  padding: 100px 0;
+  padding: 115px 0;
   background-image: url("../img/bg/askpricestar.png");
   background-position: 60%;
   background-repeat: no-repeat;
-  background-size: 378px 779px;
+  background-size: 378px 879px;
   @include tabletDown {
     background-image: url("../img/bg/askpricestar_tablet.png");
     background-position: 100%;
@@ -154,7 +154,7 @@
       @extend %fontAskTitle;
     }
     .title__caption {
-      @extend %fontAscCaption;
+      @extend %fontAskCaption;
     }
     .ask-btn {
       @extend %fontContentBtn;
@@ -162,3 +162,76 @@
     }
   }
 }
+
+.services-cost {
+  margin-top: 15px;
+  .services-cost_positioning {
+    position: relative;
+  }
+  .services-cost__title {
+    @extend %fontServicesTitle;
+    text-transform: uppercase;
+  }
+  .services__background {
+    position: absolute;
+    top: 344px;
+    left: -412+35px
+  }
+  .servieces-cost__diagnostic {
+    .diagnostic__subtitle {
+    @extend %fontServicesSubTitle;
+    border-bottom: 1px solid #000000;
+    display: inline-block;
+    margin-top: 19px;
+    }
+    .diagnostic__vars {
+      margin-top: 40px;
+      padding: 0 80px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      .diagnostic-var {
+        .diagnostic-var__price{
+          display: inline-block;
+          position: relative;
+          z-index: 10;
+          .price__inner {
+            display: inline-block;
+            position: absolute;
+            background-color: #5F24A8;
+            width: 184px;
+            height: 184px;
+            border-radius: 50%;
+            transform: translate(-84%, 110%);
+            .price__value {
+              margin: 25%;
+              display: flex;
+              flex-flow: column nowrap;
+              justify-content: center;
+                .value__numberic,
+                .value__currency {
+                  text-align: center;
+              }
+            }
+            }
+          }
+          span:first-child {
+            @extend %fontServicesPriceValue;
+          }
+          span:last-child {
+            @extend %fontServicesPriceCurrency;
+          }
+        .var__description {
+          margin-top: 46px;
+          .description__text {
+            text-align: center;
+            max-width: 70%;
+            margin: 0 auto;
+            @extend %fontServicesVarDescription;
+          }
+        }
+        }
+      }
+    }
+  }
+  
