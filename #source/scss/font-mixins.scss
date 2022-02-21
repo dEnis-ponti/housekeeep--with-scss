@@ -73,3 +73,6 @@ $clrGrey:#8B8B8B;
 %fontServicesPriceCurrency {
   @include fontValue("Roboto", 700, normal, 2rem, 15px, $clrWhite);
 }
+%fontServicesVarDescription {
+  @include fontValue("Roboto", 500, normal, 1.4285rem, 24px, $clrBlack);
+}

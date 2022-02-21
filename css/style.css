@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #000000;
 }
 
-.services-cost .servieces-cost__diagnostic .diagnostic__vars .diagnostic-var .diagnostic-var__price span:first-child {
+.services-cost .servieces-cost__diagnostic .diagnostic__vars .diagnostic-var span:first-child {
   font-family: "Roboto";
   font-weight: 700;
   font-style: normal;
@@ -239,13 +239,22 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
 
-.services-cost .servieces-cost__diagnostic .diagnostic__vars .diagnostic-var .diagnostic-var__price span:last-child {
+.services-cost .servieces-cost__diagnostic .diagnostic__vars .diagnostic-var span:last-child {
   font-family: "Roboto";
   font-weight: 700;
   font-style: normal;
   font-size: 2rem;
   line-height: 15px;
   color: #ffffff;
+}
+
+.services-cost .servieces-cost__diagnostic .diagnostic__vars .diagnostic-var .var__description .description__text {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.4285rem;
+  line-height: 24px;
+  color: #000000;
 }
 
 .header__top .top__container .telephone .telephone__button {
@@ -720,8 +729,16 @@ h1, h2, h3, h4, h5, h6 {
 .services-cost {
   margin-top: 15px;
 }
+.services-cost .services-cost_positioning {
+  position: relative;
+}
 .services-cost .services-cost__title {
   text-transform: uppercase;
+}
+.services-cost .services__background {
+  position: absolute;
+  top: 344px;
+  left: -377px;
 }
 .services-cost .servieces-cost__diagnostic .diagnostic__subtitle {
   border-bottom: 1px solid #000000;
@@ -730,6 +747,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .services-cost .servieces-cost__diagnostic .diagnostic__vars {
   margin-top: 40px;
+  padding: 0 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -743,24 +761,42 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 10;
 }
-.services-cost .servieces-cost__diagnostic .diagnostic__vars .diagnostic-var .diagnostic-var__price::after {
-  content: "";
+.services-cost .servieces-cost__diagnostic .diagnostic__vars .diagnostic-var .diagnostic-var__price .price__inner {
+  display: inline-block;
   position: absolute;
   background-color: #5F24A8;
-  border-radius: 50%;
   width: 184px;
   height: 184px;
-  z-index: 1;
-  -webkit-transform: translate(-85%, 110%);
-          transform: translate(-85%, 110%);
+  border-radius: 50%;
+  -webkit-transform: translate(-84%, 110%);
+          transform: translate(-84%, 110%);
 }
-.services-cost .servieces-cost__diagnostic .diagnostic__vars .diagnostic-var .diagnostic-var__price .price__value {
-  position: absolute;
-  z-index: 10;
-  -webkit-transform: translate(-175%, 325%);
-          transform: translate(-175%, 325%);
+.services-cost .servieces-cost__diagnostic .diagnostic__vars .diagnostic-var .diagnostic-var__price .price__inner .price__value {
+  margin: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.services-cost .servieces-cost__diagnostic .diagnostic__vars .diagnostic-var .diagnostic-var__price .price__inner .price__value .value__numberic,
+.services-cost .servieces-cost__diagnostic .diagnostic__vars .diagnostic-var .diagnostic-var__price .price__inner .price__value .value__currency {
   text-align: center;
 }
+.services-cost .servieces-cost__diagnostic .diagnostic__vars .diagnostic-var .var__description {
+  margin-top: 46px;
+}
+.services-cost .servieces-cost__diagnostic .diagnostic__vars .diagnostic-var .var__description .description__text {
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
 .footer {
   background-color: #000000;
 }
