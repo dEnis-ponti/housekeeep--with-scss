@@ -92,3 +92,9 @@ $clrPerfectOrange:#FF5C00;
 %fontServicesTableNotice {
   @include fontValue("Roboto", 400, normal, 1.4285rem, 23px, $clrBlack);
 }
+%fontServicesAdvantagesStatement {
+  @include fontValue("Roboto", 700, normal, 2rem, 33px, $clrBlack);
+}
+%fontServicesAdvantagesItem {
+  @include fontValue("Roboto", 700, normal, 1.5714rem, 26px, $clrWhite);
+}
