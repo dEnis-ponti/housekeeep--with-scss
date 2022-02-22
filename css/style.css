@@ -221,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #000000;
 }
 
-.services-cost .servieces-cost__diagnostic .diagnostic__subtitle {
+.services-cost .servieces-cost__repairs .services-cost__subtitle, .services-cost .servieces-cost__diagnostic .diagnostic__subtitle {
   font-family: "Roboto";
   font-weight: 700;
   font-style: normal;
@@ -254,6 +254,51 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-size: 1.4285rem;
   line-height: 24px;
+  color: #000000;
+}
+
+.services-cost .servieces-cost__repairs .repairs__inner .repairs__table tr td .table__first-column {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.4285rem;
+  line-height: 24px;
+  color: #000000;
+}
+
+.services-cost .servieces-cost__repairs .repairs__inner .repairs__table tr td .second-column {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4285rem;
+  line-height: 23px;
+  color: #000000;
+}
+
+.services-cost .servieces-cost__repairs .repairs__inner .repairs__table tr td .second-column span {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.14285rem;
+  line-height: 35px;
+  color: #FF5C00;
+}
+
+.services-cost .servieces-cost__repairs .repairs__inner .repairs__table tr td .table__btn {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.14285rem;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.services-cost .servieces-cost__repairs .repairs__inner .repairs__table tr td .table__notice {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4285rem;
+  line-height: 23px;
   color: #000000;
 }
 
@@ -795,6 +840,76 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   max-width: 70%;
   margin: 0 auto;
+}
+.services-cost .servieces-cost__repairs {
+  margin-top: 91px;
+}
+.services-cost .servieces-cost__repairs .services-cost__subtitle {
+  border-bottom: 1px solid #000000;
+  display: inline-block;
+}
+.services-cost .servieces-cost__repairs .repairs__inner {
+  margin-top: 40px;
+}
+.services-cost .servieces-cost__repairs .repairs__inner .repairs__table {
+  width: 100%;
+  border: 1px solid #999999;
+  border-radius: 20px 20px 20px 20px;
+  border-spacing: 0;
+  overflow: hidden;
+}
+.services-cost .servieces-cost__repairs .repairs__inner .repairs__table tr {
+  height: 100px;
+}
+.services-cost .servieces-cost__repairs .repairs__inner .repairs__table tr td {
+  position: relative;
+  width: 33.33%;
+}
+.services-cost .servieces-cost__repairs .repairs__inner .repairs__table tr td .table__first-column {
+  padding: 0 56px;
+}
+.services-cost .servieces-cost__repairs .repairs__inner .repairs__table tr td .second-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.services-cost .servieces-cost__repairs .repairs__inner .repairs__table tr td .second-column span {
+  padding-left: 6px;
+}
+.services-cost .servieces-cost__repairs .repairs__inner .repairs__table tr td .table__btn {
+  width: 250px;
+  background: #FF880F;
+  -webkit-box-shadow: 2px 4px 20px rgba(187, 150, 0, 0.4);
+          box-shadow: 2px 4px 20px rgba(187, 150, 0, 0.4);
+  border-radius: 10px;
+  padding: 18px 56px 21px;
+  margin-left: 15%;
+}
+.services-cost .servieces-cost__repairs .repairs__inner .repairs__table tr td .table__notice {
+  padding-left: 56px;
+  font-style: italic;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.services-cost .servieces-cost__repairs .repairs__inner .repairs__table tr td:not(:first-child) > *::before {
+  content: "";
+  width: 1px;
+  height: 55px;
+  background-color: #000000;
+  position: absolute;
+  top: 25%;
+  left: -10%;
+}
+.services-cost .servieces-cost__repairs .repairs__inner .repairs__table tr:nth-child(odd) {
+  background-color: #E4F9FF;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+.services-cost .servieces-cost__repairs .repairs__inner .repairs__table tr:not(:last-child) td {
+  border-bottom: 1px solid #999999;
 }
 
 .footer {

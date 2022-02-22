@@ -233,5 +233,75 @@
         }
       }
     }
+  .servieces-cost__repairs {
+    margin-top: 91px;
+    .services-cost__subtitle {
+      @extend %fontServicesSubTitle;
+      border-bottom: 1px solid #000000;
+      display: inline-block;
+    }
+    .repairs__inner {
+      margin-top: 40px;
+      .repairs__table {
+        width: 100%;
+        border: 1px solid #999999;
+        border-radius: 20px 20px 20px 20px;
+        border-spacing: 0;
+        overflow: hidden;
+        tr {
+          height: 100px;
+          td {
+            position: relative;
+            width: 33.33%;
+            .table__first-column {
+              @extend %fontServicesTableFirstColumn;
+              padding: 0 56px;
+            }
+            .second-column {
+              display: flex;
+              align-items: center;
+              @extend %fontServicesTableSecondColumn;
+              span {
+                padding-left: 6px;
+                @extend %fontServicesTableSecondColumnSpan;
+              }
+            }
+            .table__btn {
+              width: 250px;
+              background: #FF880F;
+              box-shadow: 2px 4px 20px rgba(187, 150, 0, 0.4);
+              border-radius: 10px;
+              padding: 18px 56px 21px;
+              @extend %fontServicesTableBtn;
+              margin-left: 15%;
+            }
+            .table__notice {
+              padding-left: 56px;
+              @extend %fontServicesTableNotice;
+              font-style: italic;
+              text-decoration-line: underline;
+            }
+          }
+          td:not(:first-child) > *::before {
+            content: "";
+            width: 1px;
+            height: 55px;
+            background-color: #000000;
+            position: absolute;
+            top: 25%;
+            left: -10%;
+          }
+        }
+        tr:nth-child(odd) {
+          background-color: #E4F9FF;
+          background-clip: padding-box;
+          overflow: hidden;
+        }
+        tr:not(:last-child) td {
+          border-bottom: 1px solid #999999;
+        }
+      }
+    }
+  }
   }
   

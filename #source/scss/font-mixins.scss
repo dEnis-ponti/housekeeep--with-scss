@@ -12,6 +12,7 @@
 $clrWhite:#ffffff;
 $clrBlack:#000000;
 $clrGrey:#8B8B8B;
+$clrPerfectOrange:#FF5C00;
 
 // Хедер
 %fontLogoTitle{
@@ -75,4 +76,19 @@ $clrGrey:#8B8B8B;
 }
 %fontServicesVarDescription {
   @include fontValue("Roboto", 500, normal, 1.4285rem, 24px, $clrBlack);
+}
+%fontServicesTableFirstColumn {
+  @include fontValue("Roboto", 700, normal, 1.4285rem, 24px, $clrBlack);
+}
+%fontServicesTableSecondColumn {
+  @include fontValue("Roboto", 400, normal, 1.4285rem, 23px, $clrBlack);
+}
+%fontServicesTableSecondColumnSpan {
+  @include fontValue("Roboto", 700, normal, 2.14285rem, 35px, $clrPerfectOrange);
+}
+%fontServicesTableBtn {
+  @include fontValue("Roboto", 700, normal, 1.14285rem, 19px, $clrWhite);
+}
+%fontServicesTableNotice {
+  @include fontValue("Roboto", 400, normal, 1.4285rem, 23px, $clrBlack);
 }
