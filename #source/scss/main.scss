@@ -342,7 +342,7 @@
           width: 122px;
           height: 122px;
           border: 2px solid #5F24A8;
-          background-color: #fff;
+          background-color: #FFFFFF;
           box-shadow: 0px 1px 30px 5px rgba(82, 82, 82, 0.25);
           position: absolute;
           display: inline-block;
@@ -377,3 +377,260 @@
   }
 
 // Секция "Консультация"
+.consulting_positioning {
+    position: relative;
+}
+.consulting {
+  margin-top: 61px;
+  .consulting__background {
+    .background__main {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1042px;
+      z-index: -1;
+    }
+    .background__elems {
+      .background__elem {
+      position: absolute;
+      z-index: -1;
+    }
+    .background__elem:nth-child(1) {
+      right: 12%;
+      top: 32%;
+    }
+    .background__elem:nth-child(2) {
+      left: 6%;
+      bottom: 6%;
+    }
+    }
+    
+  }
+  .consulting__content {
+    z-index: 1;
+    padding-top: 123px;
+    padding-bottom: 128px;
+    display: flex;
+    flex-direction: column;
+    .consulting__title {
+    @extend %fontConsultingTitle;
+    display: inline-block;
+    padding: 25px 24px 24px 24px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: center;
+      span {
+        color: #FF5C00;
+      }
+    }
+    .consulting__subtitle {
+      @extend %fontConsultingSubtitle;
+      margin: 53px auto 0 auto;
+      justify-self: center;
+    }
+  }
+  .consulting__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+    .consulting__left-column {
+      flex: 0 1 370px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .consulting__qualities {
+        .qualities__item {
+          position: relative;
+          @extend %fontConsultingQualities;
+          padding-left: 77px;
+        }
+        .qualities__item:not(:first-child) {
+          margin-top: 48px;
+        }
+        .qualities__item::before {
+          content: url("/img/icons/star.svg");
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          left: 0;
+          top: -25%;
+        }
+      }
+      .consulting__number {
+        margin-top: 63px;
+        display: flex;
+        flex-direction: column;
+        .number__caption {
+          @extend %fontConsultingNumberCaption;
+          text-align: center;
+        }
+        .number__value {
+          @extend %fontConsultingNumberValue;
+          margin-top: 22px;
+          text-align: center;
+          padding: 17px 28px 16px;
+          background-color: #fff;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+}
+
+.callback-form {
+  width: 448px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  .callback-form__top {
+    background: linear-gradient(180deg, #FF5C00 63.54%, rgba(255, 92, 0, 0) 100%);
+    border-radius: 20px;
+    .callback-form__headline {
+    @extend %fontCallbackFormHeadline;
+    display: inline-block;
+    margin: 42px 42px;
+    text-align: center;
+    }
+  }
+  .callback-form__content {
+    display: flex;
+    flex-direction: column;
+    .callback-form__input {
+      display: block;
+      margin: 55px auto 0;
+      padding: 17px 45px;
+      border: 2px solid #CACACA;
+      border-radius: 10px;
+      @extend %fontCallbackFormInput;
+    }
+    .callback-form__btn {
+      @extend %fontCallbackFormHeadline;
+      display: inline-block;
+      margin: 43px auto 0;
+      padding: 17px 34px;
+      background: #FF880F;
+      box-shadow: 2px 4px 20px rgba(255, 136, 15, 0.65);
+      border-radius: 40px;
+    }
+    .callback-form__caption {
+      @extend %fontCallbackFormCaption;
+      margin: 27px auto 46px;
+    }
+  }
+}
+
+// Секция "Почему Мы?"
+.why-us_positioning {
+  position: relative;
+}
+.why-us {
+  padding-top: 187px;
+  padding-bottom: 100px;
+  .why-us__background {
+    .background__img {
+      position: absolute;
+      width: 1920;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -2;
+    }
+  }
+  .why-us__content {
+    display: flex;
+    flex-direction: column;
+    .why-us__quality-guarantees {
+      @extend %fontWhyUsQualityGuarant;
+      display: inline-block;
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 32px 54px;
+      margin: 0 auto;
+    }
+    .why-us__inner {
+      display: flex;
+      flex-direction: column;
+      max-width: 670px;
+      margin-top: 43px;
+      .why-us__title {
+        @extend %fontWhyUsTitle;
+        padding-left: 4px;
+        text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+      }
+      .why-us__title::after {
+        content: "";
+        position: absolute;
+        bottom: -12px;
+        left: 0;
+        width: 263px;
+        height: 3px;
+        background: linear-gradient(90deg, #5F24A8 56.74%, rgba(95, 36, 168, 0) 74.86%);
+      }
+      .why-us__qualities {
+        margin-top: 60px;
+        .qualities__item {
+          position: relative;
+          @extend %fontWhyUsQualityGuarant;
+          padding-left: 77px;
+        }
+        .qualities__item:not(:first-child) {
+          margin-top: 48px;
+        }
+        .qualities__item::before {
+          content: url("/img/icons/star.svg");
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          left: 0;
+          top: -25%;
+        }
+      }
+      .why-us__guarantees {
+        @extend %fontWhyUsTitle;
+        margin-top: 59px;
+      }
+      .guarantees__list {
+        margin-top: 45px;
+        .guarantees__item {
+          
+          max-width: 602px;
+          position: relative;
+          padding: 39px 43px 39px 137px;
+          background: linear-gradient(90deg, #5F24A8 48.79%, rgba(3, 191, 250, 0.84) 84.38%);
+          border-radius: 55.5px;
+          @extend %fontServicesAdvantagesItem;
+          text-shadow: 2px 6px 15px rgba(255, 255, 255, 0.5);
+        }
+        .guarantees__item:not(:first-child) {
+          margin-top: 32px;
+        }
+        .guarantees__item::before {
+          content: "";
+          width: 104px;
+          height: 104px;
+          border: 3px solid #5F24A8;
+          background-color: #FFFFFF;
+          box-shadow: 0px 1px 30px 5px rgba(82, 82, 82, 0.25);
+          position: absolute;
+          display: inline-block;
+          border-radius: 50%;
+          top: 0%;
+          left: 0%;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        .guarantees__item:nth-child(1)::before {
+          background-image: url("../img/icons/trg__guarantee.svg");
+        }
+        .guarantees__item:nth-child(2)::before {
+          background-image: url("../img/icons/trg__quality.svg");
+        }
+      }
+    }
+  }
+}
