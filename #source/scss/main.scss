@@ -24,6 +24,7 @@
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  min-width: 0;
 }
 
 .intro__top {
@@ -51,8 +52,8 @@
 }
 
 .intro__bottom {
+  margin-top: 320px;
   .benefits {
-    margin-top: 320px;
     display: flex;
     justify-content: space-between;
     @include tabletDown {
@@ -108,10 +109,10 @@
 
 // Секция "Вопрос"-----------------------------------------------------------------------
 .ask-section {
-  margin-top: 28px;
+  margin-top: 395px;
   padding: 115px 0;
   background-image: url("../img/bg/askpricestar.png");
-  background-position: 60%;
+  background-position: 57%;
   background-repeat: no-repeat;
   background-size: 378px 879px;
   @include tabletDown {
@@ -532,11 +533,14 @@
   .why-us__background {
     .background__img {
       position: absolute;
-      width: 1920;
+      width: 1920px;
       height: 100%;
       top: 0;
       left: 0;
       z-index: -2;
+      @include fullhdUp {
+        width: 100%;
+      }
     }
   }
   .why-us__content {
@@ -631,6 +635,112 @@
           background-image: url("../img/icons/trg__quality.svg");
         }
       }
+    }
+  }
+}
+
+  //Секция "Отзывы"
+
+.reviews_positioning {
+  position: relative;
+}
+
+.reviews {
+  margin-top: 106px;
+  .reviews__background {
+    .background__img {
+      position: absolute;
+      background-color: red;
+      top: 0;
+      left: 0;
+      z-index: -2;
+    }
+  }
+  .reviews__title {
+    @extend %fontWhyUsTitle;
+  }
+  .title__caption {
+    display: inline-block;
+    margin-top: 22px;
+    @extend %fontReviewsTitleCaption;
+  }
+  .reviews__slider {
+    margin-top: 82px;
+    margin-bottom: 149px;
+    width: 100%;
+    .slider__wrapper {
+      max-width: 370px;
+      .slider__slide {
+        max-width: 370px;
+        .reviews__item {
+          display: flex;
+          flex-direction: column;
+          background: #FFFFFF;
+          box-shadow: 0px 3px 15px 10px rgba(0, 0, 0, 0.2);
+          border-radius: 42px;
+          padding: 28px;
+          .item__top {
+            display: flex;
+            justify-content: space-between;
+            .reviewer-avatar {
+              padding: 4px 10px;
+              border-radius: 50%;
+            }
+            .review-id {
+              align-self: center;
+              .reviewer-name {
+                @extend %fontReviewerName;
+              }
+              .review-date {
+                @extend %fontReviewerDate;
+                margin-top: 11px;
+              }
+            }
+            .review-socials {
+              display: flex;
+              .socials__link:last-child {
+                margin-left: 8px;
+              }
+            }
+          }
+          .item__bottom {
+            .review-text {
+              @extend %fontReviewText;
+              margin-top: 27px;
+            }
+          }
+        }
+      }
+    }
+    .swiper-button-prev {
+      content: url("/img/icons/arrow-left.svg");
+      width: 49px;
+      height: 49px;
+      left: 5%;
+    }
+    .swiper-button-next {
+      content: url("/img/icons/arrow-right.svg");
+      width: 49px;
+      height: 49px;
+      right: 5%;
+    }
+    .pagination-button-next,
+    .pagination-button-prev {
+      top: 111%;
+    }
+    .pagination-button-next {
+      right: 45%;
+    }
+    .pagination-button-prev {
+      left: 45%;
+    }
+    .swiper-pagination-fraction {
+      @extend %fontReviewPagination;
+      bottom: -14%;
+      z-index: -1;
+    }
+    .swiper-pagination-current {
+      color: #B0B0B0;
     }
   }
 }

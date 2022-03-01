@@ -1,5 +1,5 @@
 @mixin fullhdUp {
-  @media (min-width:1921px) { @content; }
+  @media (min-width:1924px) { @content; }
 }
 @mixin tabletDown{
   @media (max-width:920px) { @content; }

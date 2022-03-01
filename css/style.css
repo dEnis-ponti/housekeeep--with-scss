@@ -401,12 +401,57 @@ h1, h2, h3, h4, h5, h6 {
   color: #000000;
 }
 
-.why-us .why-us__content .why-us__inner .why-us__guarantees, .why-us .why-us__content .why-us__inner .why-us__title {
+.reviews .reviews__title, .why-us .why-us__content .why-us__inner .why-us__guarantees, .why-us .why-us__content .why-us__inner .why-us__title {
   font-family: "Roboto";
   font-weight: 700;
   font-style: normal;
   font-size: 2rem;
   line-height: 33px;
+  color: #000000;
+}
+
+.reviews .title__caption {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.7857rem;
+  line-height: 29px;
+  color: #000000;
+}
+
+.reviews .reviews__slider .slider__wrapper .slider__slide .reviews__item .item__top .review-id .reviewer-name {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2857rem;
+  line-height: 21px;
+  color: #000000;
+}
+
+.reviews .reviews__slider .slider__wrapper .slider__slide .reviews__item .item__top .review-id .review-date {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.14285rem;
+  line-height: 19px;
+  color: #585858;
+}
+
+.reviews .reviews__slider .slider__wrapper .slider__slide .reviews__item .item__bottom .review-text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4285rem;
+  line-height: 26px;
+  color: #000000;
+}
+
+.reviews .reviews__slider .swiper-pagination-fraction {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.7857rem;
+  line-height: 32px;
   color: #000000;
 }
 
@@ -438,6 +483,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper {
+  min-width: 0;
   min-height: 100%;
   overflow: hidden;
   display: -webkit-box;
@@ -480,7 +526,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 7.29%;
   margin-right: 7.29%;
 }
-@media (min-width: 1921px) {
+@media (min-width: 1924px) {
   .header__top .top__container {
     margin: 0 auto;
   }
@@ -723,7 +769,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   width: 100%;
 }
-@media (min-width: 1921px) {
+@media (min-width: 1924px) {
   .intro__background {
     background-size: cover;
     background-position: center 0px;
@@ -734,6 +780,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  min-width: 0;
 }
 
 .intro__top {
@@ -754,8 +801,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 40px;
 }
 
-.intro__bottom .benefits {
+.intro__bottom {
   margin-top: 320px;
+}
+.intro__bottom .benefits {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -829,10 +878,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ask-section {
-  margin-top: 28px;
+  margin-top: 395px;
   padding: 115px 0;
   background-image: url("../img/bg/askpricestar.png");
-  background-position: 60%;
+  background-position: 57%;
   background-repeat: no-repeat;
   background-size: 378px 879px;
 }
@@ -1276,11 +1325,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .why-us .why-us__background .background__img {
   position: absolute;
-  width: 1920;
+  width: 1920px;
   height: 100%;
   top: 0;
   left: 0;
   z-index: -2;
+}
+@media (min-width: 1924px) {
+  .why-us .why-us__background .background__img {
+    width: 100%;
+  }
 }
 .why-us .why-us__content {
   display: -webkit-box;
@@ -1382,6 +1436,110 @@ h1, h2, h3, h4, h5, h6 {
 }
 .why-us .why-us__content .why-us__inner .guarantees__list .guarantees__item:nth-child(2)::before {
   background-image: url("../img/icons/trg__quality.svg");
+}
+
+.reviews_positioning {
+  position: relative;
+}
+
+.reviews {
+  margin-top: 106px;
+}
+.reviews .reviews__background .background__img {
+  position: absolute;
+  background-color: red;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.reviews .title__caption {
+  display: inline-block;
+  margin-top: 22px;
+}
+.reviews .reviews__slider {
+  margin-top: 82px;
+  margin-bottom: 149px;
+  width: 100%;
+}
+.reviews .reviews__slider .slider__wrapper {
+  max-width: 370px;
+}
+.reviews .reviews__slider .slider__wrapper .slider__slide {
+  max-width: 370px;
+}
+.reviews .reviews__slider .slider__wrapper .slider__slide .reviews__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 3px 15px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 15px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 42px;
+  padding: 28px;
+}
+.reviews .reviews__slider .slider__wrapper .slider__slide .reviews__item .item__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.reviews .reviews__slider .slider__wrapper .slider__slide .reviews__item .item__top .reviewer-avatar {
+  padding: 4px 10px;
+  border-radius: 50%;
+}
+.reviews .reviews__slider .slider__wrapper .slider__slide .reviews__item .item__top .review-id {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.reviews .reviews__slider .slider__wrapper .slider__slide .reviews__item .item__top .review-id .review-date {
+  margin-top: 11px;
+}
+.reviews .reviews__slider .slider__wrapper .slider__slide .reviews__item .item__top .review-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.reviews .reviews__slider .slider__wrapper .slider__slide .reviews__item .item__top .review-socials .socials__link:last-child {
+  margin-left: 8px;
+}
+.reviews .reviews__slider .slider__wrapper .slider__slide .reviews__item .item__bottom .review-text {
+  margin-top: 27px;
+}
+.reviews .reviews__slider .swiper-button-prev {
+  content: url("/img/icons/arrow-left.svg");
+  width: 49px;
+  height: 49px;
+  left: 5%;
+}
+.reviews .reviews__slider .swiper-button-next {
+  content: url("/img/icons/arrow-right.svg");
+  width: 49px;
+  height: 49px;
+  right: 5%;
+}
+.reviews .reviews__slider .pagination-button-next,
+.reviews .reviews__slider .pagination-button-prev {
+  top: 111%;
+}
+.reviews .reviews__slider .pagination-button-next {
+  right: 45%;
+}
+.reviews .reviews__slider .pagination-button-prev {
+  left: 45%;
+}
+.reviews .reviews__slider .swiper-pagination-fraction {
+  bottom: -14%;
+  z-index: -1;
+}
+.reviews .reviews__slider .swiper-pagination-current {
+  color: #B0B0B0;
 }
 
 .footer {

@@ -128,3 +128,18 @@ $clrPerfectOrange:#FF5C00;
 %fontWhyUsTitle {
   @include fontValue("Roboto", 700, normal, 2rem, 33px, $clrBlack);
 }
+%fontReviewsTitleCaption {
+  @include fontValue("Roboto", 500, normal, 1.7857rem, 29px, $clrBlack);
+}
+%fontReviewerName {
+  @include fontValue("Roboto", 700, normal, 1.2857rem, 21px, $clrBlack);
+}
+%fontReviewerDate {
+  @include fontValue("Roboto", 400, normal, 1.14285rem, 19px, #585858);
+}
+%fontReviewText {
+  @include fontValue("Roboto", 400, normal, 1.4285rem, 26px, $clrBlack);
+}
+%fontReviewPagination {
+  @include fontValue("Roboto", 400, normal, 1.7857rem, 32px, $clrBlack);
+}
