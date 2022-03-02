@@ -6,7 +6,7 @@
 }
 
 .intro__background {
-  background-image: url("../img/bg/1screen-d.jpg");
+  background-image: url("../img/bg/1screen_d.jpg");
   background-position: center 25px;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -18,6 +18,11 @@
     background-size: cover;
     background-position: center 0px;
   }
+  @include tabletDown {
+    background-image: url("../img/bg/1screen_tablet.jpg");
+    background-size: 920px;
+    background-position: top 0px;
+  }
 }
 
 .content__container {
@@ -28,10 +33,39 @@
 }
 
 .intro__top {
-  padding-top: 190+150px;
+  padding-top: 143+150px;
   max-width: 520px;
+  margin-left: 28-15px;
+  padding-left: 10px;
+  position: relative;
   & > * {
     display: inline-block;
+  }
+  & > *:not(.top__background) {
+    z-index: 1;
+  }
+  .top__background {
+    display: none;
+  }
+  @include tabletDown {
+    .top__background {
+      position: absolute;
+      z-index: 0;
+      display: inline-block;
+        & > * {
+          position: absolute;
+      }
+      .background__elem-left {
+        left: 5vw;
+      }
+      .background__elem-right {
+        left: 75vw;
+      }
+      .background__chelik {
+        left: 19vw;
+        top: 140px;
+      }
+    }
   }
   .main-title {
     @extend %fontMainTitle;
@@ -52,7 +86,7 @@
 }
 
 .intro__bottom {
-  margin-top: 320px;
+  margin-top: 360px;
   .benefits {
     display: flex;
     justify-content: space-between;
@@ -119,6 +153,8 @@
     background-image: url("../img/bg/askpricestar_tablet.png");
     background-position: 100%;
     background-size: 198px 461px;
+    margin-top: 0;
+    padding: 103px 0 112px;
   }
   .content__container--ask {
     max-width: 1920px;
@@ -127,12 +163,17 @@
     padding: 0 15px;
     position: relative;
     display: flex;
+    @include tabletDown {
+      align-items: center;
+    }
   }
   .ask-section__pic {
     position: relative;
     flex: 0 1 100%;
     max-width: 50%;
-    
+    @include tabletDown {
+      flex: 1 0 328px;
+    }
     min-height: 267px;
     transform: translateX(-15px);
     left: -15px;
@@ -142,11 +183,26 @@
     box-shadow: 0px 4px 15px 5px rgba(95, 36, 168, 0.5);
     border-radius: 10px;
     }
+    .pic_desktop {
+      @include tabletDown {
+        display: none;
+      }
+    }
+    .pic_tablet {
+      display: none;
+      @include tabletDown {
+        display: inline-block;
+      }
+    }
   }
   .ask-section__text {
     margin-left: 1%;
     padding-top: 11%;
     max-width: 570px;
+    @include tabletDown {
+      padding-top: 50px;
+      padding-bottom: 32px;
+    }
     & > * {
       display: inline-block;
     }
@@ -194,6 +250,9 @@
       display: flex;
       justify-content: space-between;
       position: relative;
+      @include notebookDown {
+        padding: 0 10px;
+      }
       .diagnostic-var {
         .diagnostic-var__price{
           display: inline-block;
@@ -729,6 +788,10 @@
         }
       }
     }
+    .swiper-button-prev,
+    .swiper-button-next {
+      margin-top: 0;
+    }
     .swiper-button-prev {
       content: url("/img/icons/arrow-left.svg");
       width: 49px;
@@ -741,23 +804,25 @@
       height: 49px;
       right: 5%;
     }
-    .pagination-button-next,
-    .pagination-button-prev {
-      top: 111%;
-    }
-    .pagination-button-next {
-      right: 45%;
-    }
-    .pagination-button-prev {
-      left: 45%;
-    }
-    .swiper-pagination-fraction {
-      @extend %fontReviewPagination;
-      bottom: -14%;
-      z-index: -1;
-    }
-    .swiper-pagination-current {
-      color: #B0B0B0;
+    .slider__pagination-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 42px;
+      .pagination-button-next,
+      .pagination-button-prev {
+        position: inherit;
+        margin-top: 0;
+      }
+      .swiper-pagination-fraction {
+        @extend %fontReviewPagination;
+        position: inherit;
+        z-index: -1;
+        max-width: 82px;
+      }
+      .swiper-pagination-current {
+        color: #B0B0B0;
+      }
     }
   }
 }

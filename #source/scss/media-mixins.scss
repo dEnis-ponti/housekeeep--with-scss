@@ -1,6 +1,9 @@
 @mixin fullhdUp {
   @media (min-width:1924px) { @content; }
 }
+@mixin notebookDown {
+  @media (max-width:1400px) { @content; }
+}
 @mixin tabletDown{
   @media (max-width:920px) { @content; }
 }

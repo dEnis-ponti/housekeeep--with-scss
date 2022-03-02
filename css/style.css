@@ -202,6 +202,16 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 33.51px;
   color: #000000;
 }
+@media (max-width: 920px) {
+  .ask-section .ask-section__text .text__title {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.4285rem;
+    line-height: 24px;
+    color: #000000;
+  }
+}
 
 .ask-section .ask-section__text .title__caption {
   font-family: "Roboto";
@@ -446,7 +456,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #000000;
 }
 
-.reviews .reviews__slider .swiper-pagination-fraction {
+.reviews .reviews__slider .slider__pagination-nav .swiper-pagination-fraction {
   font-family: "Roboto";
   font-weight: 400;
   font-style: normal;
@@ -547,7 +557,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1410px;
+  max-width: 1400px;
   padding: 35px 0 25px 0;
   margin-left: 7.29%;
   margin-right: 7.29%;
@@ -786,7 +796,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro__background {
-  background-image: url("../img/bg/1screen-d.jpg");
+  background-image: url("../img/bg/1screen_d.jpg");
   background-position: center 25px;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -801,6 +811,13 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center 0px;
   }
 }
+@media (max-width: 920px) {
+  .intro__background {
+    background-image: url("../img/bg/1screen_tablet.jpg");
+    background-size: 920px;
+    background-position: top 0px;
+  }
+}
 
 .content__container {
   max-width: 1200px;
@@ -810,11 +827,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro__top {
-  padding-top: 340px;
+  padding-top: 293px;
   max-width: 520px;
+  margin-left: 13px;
+  padding-left: 10px;
+  position: relative;
 }
 .intro__top > * {
   display: inline-block;
+}
+.intro__top > *:not(.top__background) {
+  z-index: 1;
+}
+.intro__top .top__background {
+  display: none;
+}
+@media (max-width: 920px) {
+  .intro__top .top__background {
+    position: absolute;
+    z-index: 0;
+    display: inline-block;
+  }
+  .intro__top .top__background > * {
+    position: absolute;
+  }
+  .intro__top .top__background .background__elem-left {
+    left: 5vw;
+  }
+  .intro__top .top__background .background__elem-right {
+    left: 75vw;
+  }
+  .intro__top .top__background .background__chelik {
+    left: 19vw;
+    top: 140px;
+  }
 }
 .intro__top .main-title__caption {
   margin-top: 40px;
@@ -828,7 +874,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro__bottom {
-  margin-top: 320px;
+  margin-top: 360px;
 }
 .intro__bottom .benefits {
   display: -webkit-box;
@@ -916,6 +962,8 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url("../img/bg/askpricestar_tablet.png");
     background-position: 100%;
     background-size: 198px 461px;
+    margin-top: 0;
+    padding: 103px 0 112px;
   }
 }
 .ask-section .content__container--ask {
@@ -927,6 +975,13 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media (max-width: 920px) {
+  .ask-section .content__container--ask {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .ask-section .ask-section__pic {
   position: relative;
@@ -940,16 +995,42 @@ h1, h2, h3, h4, h5, h6 {
   left: -15px;
   top: 0;
 }
+@media (max-width: 920px) {
+  .ask-section .ask-section__pic {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 328px;
+            flex: 1 0 328px;
+  }
+}
 .ask-section .ask-section__pic img {
   width: 100%;
   -webkit-box-shadow: 0px 4px 15px 5px rgba(95, 36, 168, 0.5);
           box-shadow: 0px 4px 15px 5px rgba(95, 36, 168, 0.5);
   border-radius: 10px;
 }
+@media (max-width: 920px) {
+  .ask-section .ask-section__pic .pic_desktop {
+    display: none;
+  }
+}
+.ask-section .ask-section__pic .pic_tablet {
+  display: none;
+}
+@media (max-width: 920px) {
+  .ask-section .ask-section__pic .pic_tablet {
+    display: inline-block;
+  }
+}
 .ask-section .ask-section__text {
   margin-left: 1%;
   padding-top: 11%;
   max-width: 570px;
+}
+@media (max-width: 920px) {
+  .ask-section .ask-section__text {
+    padding-top: 50px;
+    padding-bottom: 32px;
+  }
 }
 .ask-section .ask-section__text > * {
   display: inline-block;
@@ -986,6 +1067,11 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+}
+@media (max-width: 1400px) {
+  .services-cost .services-cost__diagnostic .diagnostic__vars {
+    padding: 0 10px;
+  }
 }
 .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .diagnostic-var__price {
   display: inline-block;
@@ -1556,6 +1642,10 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+.reviews .reviews__slider .swiper-button-prev,
+.reviews .reviews__slider .swiper-button-next {
+  margin-top: 0;
+}
 .reviews .reviews__slider .swiper-button-prev {
   content: url("/img/icons/arrow-left.svg");
   width: 49px;
@@ -1568,21 +1658,29 @@ h1, h2, h3, h4, h5, h6 {
   height: 49px;
   right: 5%;
 }
-.reviews .reviews__slider .pagination-button-next,
-.reviews .reviews__slider .pagination-button-prev {
-  top: 111%;
+.reviews .reviews__slider .slider__pagination-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 42px;
 }
-.reviews .reviews__slider .pagination-button-next {
-  right: 45%;
+.reviews .reviews__slider .slider__pagination-nav .pagination-button-next,
+.reviews .reviews__slider .slider__pagination-nav .pagination-button-prev {
+  position: inherit;
+  margin-top: 0;
 }
-.reviews .reviews__slider .pagination-button-prev {
-  left: 45%;
-}
-.reviews .reviews__slider .swiper-pagination-fraction {
-  bottom: -14%;
+.reviews .reviews__slider .slider__pagination-nav .swiper-pagination-fraction {
+  position: inherit;
   z-index: -1;
+  max-width: 82px;
 }
-.reviews .reviews__slider .swiper-pagination-current {
+.reviews .reviews__slider .slider__pagination-nav .swiper-pagination-current {
   color: #B0B0B0;
 }
 
