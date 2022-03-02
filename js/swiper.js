@@ -12,7 +12,7 @@ new Swiper('.reviews__slider', {
       '<span class="' + totalClass + '"></span>';
     },
   },
-  slidesPerView: 1,
+  slidesPerView: 3,
   slidesPreGroup: 1,
   initialSlide: 1,
   centeredSlides: true,

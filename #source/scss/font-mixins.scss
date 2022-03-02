@@ -143,3 +143,9 @@ $clrPerfectOrange:#FF5C00;
 %fontReviewPagination {
   @include fontValue("Roboto", 400, normal, 1.7857rem, 32px, $clrBlack);
 }
+%fontDiscountTitle {
+  @include fontValue("Roboto", 700, normal, 1.5714rem, 26px, $clrBlack);
+}
+%fontDiscountCaption {
+  @include fontValue("Roboto", 500, normal, 1.5714rem, 26px, $clrWhite);
+}
