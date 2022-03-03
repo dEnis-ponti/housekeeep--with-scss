@@ -5,20 +5,47 @@
 }
 .header__top {
     background: linear-gradient(90deg, #443682 14.58%, #28418A 39.75%, #00669C 68.41%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   .top__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1400px;
+    width: 1400px;
     padding: 35px 0 25px 0;
     margin-left: 7.29%;
-    margin-right: 7.29%;
+    margin-right: 7.29%;    
     @include fullhdUp {
       margin: 0 auto;
+      max-width: 1400px;
+    }
+    @include notebookDown {
+    margin-left: 7.29%;
+    margin-right: 7.29%;
     }
     @include tabletDown {
       padding: 23px 15px 29px 15px;
       margin: 0;
+    }
+    @include mobileDown {
+      padding: 23px 16px 31px;
+      margin: 0;
+      flex-direction: column;
+      align-items: start;
+      .time.time_desktop,
+      .telephone.telephone_desktop {
+        display: none;
+      }
+      .logo_mobile {
+        flex: 0 1;
+        align-self: start;
+      }
+      .socials.socials_mobile {
+        flex: 1 0 auto;
+        align-self: start;
+        margin: 6px 0 0 80px;
+      }
     }
     & > * {
       align-self: center;
@@ -28,6 +55,9 @@
         .logo-pic {
           @include tabletDown {
             width: 66px;
+          }
+          @include tinyMobileDown {
+            width: 48px;
           }
         }
         .logo__caption {
@@ -69,88 +99,177 @@
           }
         }
       }
-      .time {
-        display: flex;
-        @include tabletDown {
-          order: 4;
-        }
-        & > * {
-          display: inline-block;
-          align-self: center;
-        }
-        .time__title {
-          display: flex;
-          flex: 1 0 190px;
-          margin-left: 15px;
-          @include tabletDown {
-            flex: auto;
-            margin: 0;
-          }
-          & > * {
-            display: inline-block;
-            align-self: center;
-          }
-          .time-caption {
-            padding-left: 10px;
-            @extend %fontTimeTitle;
-            @include tabletDown{
-              display: none;
-            }
-          }
-          .clock-icon {
-            width: 30px;
-            height: 30px;
-            @include tabletDown{
-              width: 21px;
-              height: 21px;
-            }
-          }
-        }
-        .time__work-hours {
-          display: flex;
-          flex: 1 0 164px;
-          flex-direction: column;
-          margin-left: 27px;
-          @include tabletDown {
-            margin-left: 16px;
-          }
-          @extend %fontWorkHours;
+      
+    }
+  .burger-menu {
+    display: none;
+    @include mobileDown {
+      display: inline-block;
+      margin-right: 61px;
+    }
+  }
+}
+.header__nav-mobile {
+  display: none;
+}
+.header__nav-mobile._active{
+  @include mobileDown {
+    margin: 0 16px;
+    display: block;
+    background-color: #fff;
+    .nav-mobile__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 26px 0;
+      .nav-mobile__item {
+        .nav-menu__link{
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 19px;
+          color: #000;
         }
       }
-      .telephone {
-        display: flex;
-        @include tabletDown {
-          order: 2;
-        }
-        .tel-number {
-          position: relative;
-          margin-left: 40px;
-        }
-
-        .tel-number:before {
-          content: url('/img/icons/telephone.svg');
-          width: 14px;
-          height: 14px;
-          position: absolute;
-          display: inline-block;
-          top: -2px;
-          left: -25px;
-
-        }
-
-        .tel-number,
-        .telephone__button {
-          @extend %fontTelNumber;
-          align-self: center;
-        }
-
-        .telephone__button {
-          margin-left: 16px;
-          @extend %callBtn;
-        }
+      .nav-mobile__item:not(:first-child) {
+        margin-top: 26px;
       }
     }
+  }
 }
+
+.header__bottom_mobile {
+  display: none;
+  @include mobileDown {
+  display: flex;
+  min-height: 81px;
+  max-width: 1170px;
+  padding: 19px 12px 21px;
+  margin: 0 16px;
+  background-color: #fff;
+  border-radius: 0px 0px 20px 20px;
+  text-align: center;
+  justify-content: space-between;
+  }
+  @include tinyMobileDown {
+    justify-content: center;
+  }
+}
+
+//Тайм и Звонок
+
+.time {
+  display: flex;
+  @include tabletDown {
+    order: 4;
+  }
+  & > * {
+    display: inline-block;
+    align-self: center;
+  }
+  .time__title {
+    display: flex;
+    flex: 1 0 190px;
+    margin-left: 15px;
+    @include tabletDown {
+      flex: auto;
+      margin: 0;
+    }
+    & > * {
+      display: inline-block;
+      align-self: center;
+    }
+    .time-caption {
+      padding-left: 10px;
+      @extend %fontTimeTitle;
+      @include tabletDown{
+        display: none;
+      }
+    }
+    .clock-icon {
+      width: 30px;
+      height: 30px;
+      @include tabletDown{
+        width: 21px;
+        height: 21px;
+      }
+    }
+  }
+  .time__work-hours {
+    display: flex;
+    flex: 1 0 164px;
+    flex-direction: column;
+    margin-left: 27px;
+    @include tabletDown {
+      margin-left: 16px;
+    }
+    @extend %fontWorkHours;
+  }
+  &.time_mobile {
+    @include tinyMobileDown {
+      display: none;
+    }
+    order: 1;
+    .time__work-hours {
+    background-image: linear-gradient(to right, #5F24A8, #01669C);
+    color:transparent;
+    background-clip: text;
+    margin-left: 0px;
+    }
+  }
+}
+.telephone {
+  display: flex;
+  @include tabletDown {
+    order: 2;
+  }
+  .tel-number {
+    position: relative;
+    margin-left: 40px;
+  }
+  .tel-number:before {
+    content: url('/img/icons/telephone.svg');
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    display: inline-block;
+    top: -2px;
+    left: -25px;
+  }
+  .tel-number,
+  .telephone__button {
+    @extend %fontTelNumber;
+    align-self: center;
+  }
+  .telephone__button {
+    margin-left: 16px;
+    @extend %callBtn;
+  }
+  &.telephone_mobile {
+    align-items: center;
+    .tel-number {
+    margin-left: 9px;
+    background-image: linear-gradient(to right, #5F24A8, #01669C);
+    color:transparent;
+    background-clip: text;
+    margin-top: 2px;
+    }
+    .tel-number::before {
+      display: none;
+    }
+    .telephone__button {
+      color: #5F24A8;
+      background-clip: text;
+      border: 1px solid transparent;
+      background: 
+      linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(to right, #5F24A8, #01669C) border-box;
+      border-radius: 8px;
+    }
+  }
+}
+
 .header__menu {
   min-height: 81px;
   max-width: 1170px;
@@ -178,5 +297,8 @@
   .nav-menu__link:hover {
     border-bottom: 1px solid #000;
     padding-bottom: 2px;
+  }
+  @include mobileDown {
+    display: none;
   }
 }
