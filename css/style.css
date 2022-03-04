@@ -702,6 +702,10 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     margin-right: 61px;
   }
+  .header__top .burger-menu .burger__icon._close {
+    width: 53px;
+    height: 53px;
+  }
 }
 
 .header__nav-mobile {

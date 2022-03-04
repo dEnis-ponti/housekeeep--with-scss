@@ -106,6 +106,10 @@
     @include mobileDown {
       display: inline-block;
       margin-right: 61px;
+      .burger__icon._close {
+        width: 53px;
+        height: 53px;
+      }
     }
   }
 }
