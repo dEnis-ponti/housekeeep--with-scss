@@ -64,6 +64,22 @@
       .background__chelik {
         left: 19vw;
         top: 140px;
+        @include mobileDown {
+          top: 296px;
+          left: -3vw;
+        }
+      }
+    }
+  }
+  @include mobileDown {
+    padding-top: 149+81+30px;
+    .top__background {
+      .background__elem-left {
+        top: 20px;
+        left: 7vw;
+      }
+      .background__elem-right {
+        left: 64vw;
       }
     }
   }
@@ -81,12 +97,18 @@
   .order-btn {
     margin-top: 40px;
     @extend %fontContentBtn;
-    @extend %orderBtn
+    @extend %orderBtn;
+    @include mobileDown {
+      margin-top: 15px;
+    }
   }
 }
 
 .intro__bottom {
   margin-top: 360px;
+  @include tabletDown {
+    margin-top: 0;
+  }
   .benefits {
     display: flex;
     justify-content: space-between;
@@ -94,7 +116,11 @@
       flex-wrap: wrap;
       justify-content: space-between;
       max-width: 562px;
-      margin: 320px auto 0 auto;
+      margin: 240px auto 0 auto;
+    }
+    @include mobileDown {
+      margin: 420px auto 0 auto;
+      justify-content: center;
     }
     .benefits__item {
       background: linear-gradient(180deg, #A6DBF5 0%, #451874 97.92%);
@@ -104,6 +130,10 @@
       justify-content: center;
       width: 262px;
       height: 280px;
+      @include mobileDown {
+        width: 209px;
+        height: 224px;
+      }
       & > * {
         display: inline-block;
       }
@@ -137,6 +167,9 @@
       @include tabletDown {
         margin-top: 34px;
       }
+    }
+    .benefits__item:nth-child(2n) {
+      margin-left: 29px;
     }
   }
 }
@@ -176,8 +209,12 @@
     }
     min-height: 267px;
     transform: translateX(-15px);
-    left: -15px;
+    left: -5px;
     top: 0;
+    z-index: 0;
+    @include mobileDown {
+
+    }
     img {
     width: 100%;
     box-shadow: 0px 4px 15px 5px rgba(95, 36, 168, 0.5);
@@ -193,12 +230,23 @@
       @include tabletDown {
         display: inline-block;
       }
+      @include mobileDown {
+        display: none;
+      }
+    }
+    .pic_mobile {
+      display: none;
+      @include mobileDown {
+        display: inline-block;
+        position: absolute;
+      }
     }
   }
   .ask-section__text {
     margin-left: 1%;
     padding-top: 11%;
     max-width: 570px;
+    z-index: 10;
     @include tabletDown {
       padding-top: 50px;
       padding-bottom: 32px;
@@ -235,7 +283,13 @@
   .services__background {
     position: absolute;
     top: 344px;
-    left: -412+35px
+    left: -412+35px;
+    @include tabletDown {
+      top: 20px;
+      left: 42%;
+      width: 160px;
+      height: 168px;
+    }
   }
   .services-cost__diagnostic {
     .diagnostic__subtitle {
@@ -253,7 +307,20 @@
       @include notebookDown {
         padding: 0 10px;
       }
+      @include tabletDown {
+        margin-top: 52px;
+      }
       .diagnostic-var {
+        @include tabletDown {
+          display: flex;
+          flex-direction: column;
+        }
+        .diagnostic-var__pic {
+          @include tabletDown {
+            width: 231.4px;
+            margin: 0 auto;
+          }
+        }
         .diagnostic-var__price{
           display: inline-block;
           position: relative;
@@ -266,6 +333,16 @@
             height: 184px;
             border-radius: 50%;
             transform: translate(-84%, 110%);
+            @include tabletDown {
+              // transform: translate(170%, -80%);
+              transform: translate(25.5vw, -95px);
+              // transform: none;
+              // top: -95px;
+              // left: 25.5vw;
+              // position: relative;
+              width: 116.97px;
+              height: 116.97px;
+            }
             .price__value {
               margin: 25%;
               display: flex;
@@ -274,6 +351,9 @@
                 .value__numberic,
                 .value__currency {
                   text-align: center;
+              }
+              @include tabletDown {
+                margin: 18% 25%;
               }
             }
             }
@@ -291,6 +371,9 @@
             max-width: 70%;
             margin: 0 auto;
             @extend %fontServicesVarDescription;
+            @include tabletDown {
+            max-width: 55%
+          }
           }
         }
         }
@@ -298,6 +381,9 @@
     }
   .services-cost__repairs {
     margin-top: 91px;
+    @include tabletDown {
+      margin-top: 51px;
+    }
     .services-cost__subtitle {
       @extend %fontServicesSubTitle;
       border-bottom: 1px solid #000000;
@@ -313,12 +399,18 @@
         overflow: hidden;
         tr {
           height: 100px;
+          @include tabletDown {
+            height: 64px;
+          }
           td {
             position: relative;
             width: 33.33%;
             .table__first-column {
               @extend %fontServicesTableFirstColumn;
               padding: 0 56px;
+              @include tabletDown {
+                padding: 0 32px 0 12px;
+              }
             }
             .second-column {
               display: flex;
@@ -327,6 +419,9 @@
               span {
                 padding-left: 6px;
                 @extend %fontServicesTableSecondColumnSpan;
+                @include tabletDown {
+                  padding-left: 21px;
+                }
               }
             }
             .table__btn {
@@ -337,12 +432,20 @@
               padding: 18px 56px 21px;
               @extend %fontServicesTableBtn;
               margin-left: 15%;
+              @include tabletDown {
+                padding: 9px 17px;
+                width: 160px;
+                margin-left: 11%;
+              }
             }
             .table__notice {
               padding-left: 56px;
               @extend %fontServicesTableNotice;
               font-style: italic;
               text-decoration-line: underline;
+              @include tabletDown {
+                padding-left: 12px;
+              }
             }
           }
           td:not(:first-child) > *::before {
@@ -353,6 +456,9 @@
             position: absolute;
             top: 25%;
             left: -10%;
+            @include tabletDown {
+              height: 35.35px;
+            }
           }
         }
         tr:nth-child(odd) {
@@ -380,6 +486,12 @@
       position: absolute;
       right: -25%;
       top: 0%;
+      @include tabletDown {
+        width: 210px;
+        top: 10%;
+        right: 0;
+        z-index: 0;
+      }
     }
     .advantages__content {
       margin-top: 63px;
@@ -387,6 +499,9 @@
       flex-flow: row nowrap;
       .advantages__list {
         flex: 1 0 670px;
+        @include tabletDown {
+          flex: 1 0 50%;
+        }
         .advantages__item {
           margin-left: 68px;
           max-width: 602px;
@@ -395,9 +510,24 @@
           background: linear-gradient(91.09deg, #5F24A8 39.53%, #05D2FF 107.7%);
           border-radius: 27px;
           @extend %fontServicesAdvantagesItem;
+          @include tabletDown {
+            max-width: 306px;
+            padding: 13px 33px 6px 47px;
+            height: 51px;
+            margin-left: 16px;
+          }
+          .br-tablet {
+            display: none;
+            @include tabletDown {
+              display: inline;
+            }
+          }
         }
         .advantages__item:not(:first-child) {
           margin-top: 32px;
+          @include tabletDown {
+            margin-top: 16.3px;
+          }
         }
         .advantages__item::before {
           content: "";
@@ -413,6 +543,12 @@
           left: -12%;
           background-position: center;
           background-repeat: no-repeat;
+          @include tabletDown {
+            width: 61px;
+            height: 61px;
+            background-size: 32px;
+            left: -6%;
+          }
         }
         .advantages__item:nth-child(1)::before {
           background-image: url("../img/icons/turn-off.svg");
@@ -428,11 +564,19 @@
         }
         .advantages__item:nth-child(5)::before {
           background-image: url("../img/icons/warning.svg");
+          background-position: center 10px;
         }
       }
       .advanteges__pic-place {
         display: flex;
         align-items: center;
+        @include tabletDown {
+          .advanteges__pic {
+          width: 445.95px;
+          height: 256.36px;
+          z-index: 1;
+          }
+        }
       }
     }
   }
@@ -452,6 +596,20 @@
       width: 100%;
       height: 1042px;
       z-index: -1;
+      @include tabletDown {
+        display: none;
+      }
+    }
+    .background__main_tablet {
+      display: none;
+      @include tabletDown {
+        display: inline-block;  
+        width: 920px;
+        position: absolute;
+        z-index: -1;
+        max-height: 1220px;
+        left: 0;
+      }
     }
     .background__elems {
       .background__elem {
@@ -461,10 +619,20 @@
     .background__elem:nth-child(1) {
       right: 12%;
       top: 32%;
+      @include tabletDown {
+        width: 289px;
+        right: -3%;
+        top: 60%;
+      }
     }
     .background__elem:nth-child(2) {
       left: 6%;
       bottom: 6%;
+      @include tabletDown {
+        width: 179px;
+        left: 0%;
+        top: 52%;
+      }
     }
     }
     
@@ -491,17 +659,36 @@
       @extend %fontConsultingSubtitle;
       margin: 53px auto 0 auto;
       justify-self: center;
+      .subtitle__br {
+        display: none;
+        @include tabletDown {
+          display: inline;
+        }
+      }
+      @include tabletDown {
+        text-align: center;
+        margin: 25px auto 0 auto;
+      }
     }
   }
   .consulting__inner {
     display: flex;
     justify-content: space-between;
     margin-top: 64px;
+    @include tabletDown {
+      flex-direction: column;
+      justify-content: center;
+    }
     .consulting__left-column {
       flex: 0 1 370px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      @include tabletDown {
+        flex-direction: row;
+        justify-content: space-around;
+        flex: 0 1 216px;
+      }
       .consulting__qualities {
         .qualities__item {
           position: relative;
@@ -524,6 +711,9 @@
         margin-top: 63px;
         display: flex;
         flex-direction: column;
+        @include tabletDown {
+          margin-top: 23px;
+        }
         .number__caption {
           @extend %fontConsultingNumberCaption;
           text-align: center;
@@ -535,7 +725,18 @@
           padding: 17px 28px 16px;
           background-color: #fff;
           border-radius: 30px;
+          @include tabletDown {
+            line-height: 35px;
+            padding: 13px 45px 12px;
+          }
         }
+      }
+    }
+    .consulting__right-column {
+      @include tabletDown {
+        display: flex;
+        justify-content: center;
+        margin-top: 49px;
       }
     }
   }
@@ -555,6 +756,9 @@
     display: inline-block;
     margin: 42px 42px;
     text-align: center;
+    @include tabletDown {
+      margin: 24px 34px;
+    }
     }
   }
   .callback-form__content {
@@ -591,6 +795,9 @@
 .why-us {
   padding-top: 187px;
   padding-bottom: 100px;
+  @include tabletDown {
+    padding-top: 10px;
+  }
   .why-us__background {
     .background__img {
       position: absolute;
@@ -601,6 +808,12 @@
       z-index: -2;
       @include fullhdUp {
         width: 100%;
+      }
+      @include tabletDown {
+        width: 1782px;
+        height: 990px;
+        top: -10%;
+        left: -93%;
       }
     }
   }
@@ -642,9 +855,20 @@
           position: relative;
           @extend %fontWhyUsQualityGuarant;
           padding-left: 77px;
+          @include tabletDown {
+            padding-left: 57px;
+          }
         }
         .qualities__item:not(:first-child) {
           margin-top: 48px;
+          @include tabletDown {
+            margin-top: 21px;
+          }
+        }
+        .qualities__item:nth-child(4)::before {
+          @include tabletDown {
+            top: 0%;
+          }
         }
         .qualities__item::before {
           content: url("/img/icons/star.svg");
@@ -653,16 +877,22 @@
           position: absolute;
           left: 0;
           top: -25%;
+          @include tabletDown {
+            transform: scale(0.7);
+            top: -45%;
+          }
         }
       }
       .why-us__guarantees {
         @extend %fontWhyUsTitle;
         margin-top: 59px;
+        @include tabletDown {
+          text-shadow: 0px 4px 4px rgba(95, 36, 168, 0.43);
+        }
       }
       .guarantees__list {
         margin-top: 45px;
         .guarantees__item {
-          
           max-width: 602px;
           position: relative;
           padding: 39px 43px 39px 137px;
@@ -670,6 +900,12 @@
           border-radius: 55.5px;
           @extend %fontServicesAdvantagesItem;
           text-shadow: 2px 6px 15px rgba(255, 255, 255, 0.5);
+          @include tabletDown {
+            padding: 39px 43px 39px 137px;
+            font-size: 28px;
+            line-height: 33px;
+            max-height: 111px;
+          }
         }
         .guarantees__item:not(:first-child) {
           margin-top: 32px;
@@ -688,6 +924,10 @@
           left: 0%;
           background-position: center;
           background-repeat: no-repeat;
+          @include tabletDown {
+            width: 110px;
+            height: 111px;
+          }
         }
         .guarantees__item:nth-child(1)::before {
           background-image: url("../img/icons/trg__guarantee.svg");

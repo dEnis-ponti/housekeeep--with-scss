@@ -248,6 +248,16 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 64.45px;
   color: #ffffff;
 }
+@media (max-width: 920px) {
+  .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var span:first-child {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    line-height: 41px;
+    color: #ffffff;
+  }
+}
 
 .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var span:last-child {
   font-family: "Roboto";
@@ -256,6 +266,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2rem;
   line-height: 15px;
   color: #ffffff;
+}
+@media (max-width: 920px) {
+  .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var span:last-child {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.7857rem;
+    line-height: 29.3px;
+    color: #ffffff;
+  }
 }
 
 .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .var__description .description__text {
@@ -275,6 +295,16 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24px;
   color: #000000;
 }
+@media (max-width: 920px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__first-column {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.14285rem;
+    line-height: 18.75px;
+    color: #000000;
+  }
+}
 
 .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .second-column {
   font-family: "Roboto";
@@ -283,6 +313,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.4285rem;
   line-height: 23px;
   color: #000000;
+}
+@media (max-width: 920px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .second-column {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.14285rem;
+    line-height: 18.75px;
+    color: #000000;
+  }
 }
 
 .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .second-column span {
@@ -293,6 +333,16 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 35px;
   color: #FF5C00;
 }
+@media (max-width: 920px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .second-column span {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.4285rem;
+    line-height: 23.44px;
+    color: #FF5C00;
+  }
+}
 
 .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__btn {
   font-family: "Roboto";
@@ -301,6 +351,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.14285rem;
   line-height: 19px;
   color: #ffffff;
+}
+@media (max-width: 920px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__btn {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.0714rem;
+    line-height: 17.58px;
+    color: #ffffff;
+  }
 }
 
 .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__notice {
@@ -311,6 +371,16 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 23px;
   color: #000000;
 }
+@media (max-width: 920px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__notice {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.14285rem;
+    line-height: 18.75px;
+    color: #000000;
+  }
+}
 
 .services-cost .services-cost__advantages .advantages__statement {
   font-family: "Roboto";
@@ -320,6 +390,16 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 33px;
   color: #000000;
 }
+@media (max-width: 920px) {
+  .services-cost .services-cost__advantages .advantages__statement {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.4285rem;
+    line-height: 23.44px;
+    color: #000000;
+  }
+}
 
 .why-us .why-us__content .why-us__inner .guarantees__list .guarantees__item, .services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item {
   font-family: "Roboto";
@@ -328,6 +408,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.5714rem;
   line-height: 26px;
   color: #ffffff;
+}
+@media (max-width: 920px) {
+  .why-us .why-us__content .why-us__inner .guarantees__list .guarantees__item, .services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.14285rem;
+    line-height: 14.91px;
+    color: #ffffff;
+  }
 }
 
 .consulting .consulting__content .consulting__title {
@@ -1045,6 +1135,24 @@ h1, h2, h3, h4, h5, h6 {
     top: 140px;
   }
 }
+@media (max-width: 920px) and (max-width: 620px) {
+  .intro__top .top__background .background__chelik {
+    top: 296px;
+    left: -3vw;
+  }
+}
+@media (max-width: 620px) {
+  .intro__top {
+    padding-top: 260px;
+  }
+  .intro__top .top__background .background__elem-left {
+    top: 20px;
+    left: 7vw;
+  }
+  .intro__top .top__background .background__elem-right {
+    left: 64vw;
+  }
+}
 .intro__top .main-title__caption {
   margin-top: 40px;
 }
@@ -1055,9 +1163,19 @@ h1, h2, h3, h4, h5, h6 {
 .intro__top .order-btn {
   margin-top: 40px;
 }
+@media (max-width: 620px) {
+  .intro__top .order-btn {
+    margin-top: 15px;
+  }
+}
 
 .intro__bottom {
   margin-top: 360px;
+}
+@media (max-width: 920px) {
+  .intro__bottom {
+    margin-top: 0;
+  }
 }
 .intro__bottom .benefits {
   display: -webkit-box;
@@ -1075,7 +1193,15 @@ h1, h2, h3, h4, h5, h6 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     max-width: 562px;
-    margin: 320px auto 0 auto;
+    margin: 240px auto 0 auto;
+  }
+}
+@media (max-width: 620px) {
+  .intro__bottom .benefits {
+    margin: 420px auto 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .intro__bottom .benefits .benefits__item {
@@ -1094,6 +1220,12 @@ h1, h2, h3, h4, h5, h6 {
           justify-content: center;
   width: 262px;
   height: 280px;
+}
+@media (max-width: 620px) {
+  .intro__bottom .benefits .benefits__item {
+    width: 209px;
+    height: 224px;
+  }
 }
 .intro__bottom .benefits .benefits__item > * {
   display: inline-block;
@@ -1130,6 +1262,9 @@ h1, h2, h3, h4, h5, h6 {
 .intro__bottom .benefits .benefits__item:nth-child(4) {
     margin-top: 34px;
   }
+}
+.intro__bottom .benefits .benefits__item:nth-child(2n) {
+  margin-left: 29px;
 }
 
 .ask-section {
@@ -1175,8 +1310,9 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 267px;
   -webkit-transform: translateX(-15px);
           transform: translateX(-15px);
-  left: -15px;
+  left: -5px;
   top: 0;
+  z-index: 0;
 }
 @media (max-width: 920px) {
   .ask-section .ask-section__pic {
@@ -1204,10 +1340,25 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
   }
 }
+@media (max-width: 620px) {
+  .ask-section .ask-section__pic .pic_tablet {
+    display: none;
+  }
+}
+.ask-section .ask-section__pic .pic_mobile {
+  display: none;
+}
+@media (max-width: 620px) {
+  .ask-section .ask-section__pic .pic_mobile {
+    display: inline-block;
+    position: absolute;
+  }
+}
 .ask-section .ask-section__text {
   margin-left: 1%;
   padding-top: 11%;
   max-width: 570px;
+  z-index: 10;
 }
 @media (max-width: 920px) {
   .ask-section .ask-section__text {
@@ -1235,6 +1386,14 @@ h1, h2, h3, h4, h5, h6 {
   top: 344px;
   left: -377px;
 }
+@media (max-width: 920px) {
+  .services-cost .services__background {
+    top: 20px;
+    left: 42%;
+    width: 160px;
+    height: 168px;
+  }
+}
 .services-cost .services-cost__diagnostic .diagnostic__subtitle {
   border-bottom: 1px solid #000000;
   display: inline-block;
@@ -1256,6 +1415,28 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 10px;
   }
 }
+@media (max-width: 920px) {
+  .services-cost .services-cost__diagnostic .diagnostic__vars {
+    margin-top: 52px;
+  }
+}
+@media (max-width: 920px) {
+  .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 920px) {
+  .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .diagnostic-var__pic {
+    width: 231.4px;
+    margin: 0 auto;
+  }
+}
 .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .diagnostic-var__price {
   display: inline-block;
   position: relative;
@@ -1270,6 +1451,14 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   -webkit-transform: translate(-84%, 110%);
           transform: translate(-84%, 110%);
+}
+@media (max-width: 920px) {
+  .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .diagnostic-var__price .price__inner {
+    -webkit-transform: translate(25.5vw, -95px);
+            transform: translate(25.5vw, -95px);
+    width: 116.97px;
+    height: 116.97px;
+  }
 }
 .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .diagnostic-var__price .price__inner .price__value {
   margin: 25%;
@@ -1288,6 +1477,11 @@ h1, h2, h3, h4, h5, h6 {
 .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .diagnostic-var__price .price__inner .price__value .value__currency {
   text-align: center;
 }
+@media (max-width: 920px) {
+  .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .diagnostic-var__price .price__inner .price__value {
+    margin: 18% 25%;
+  }
+}
 .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .var__description {
   margin-top: 46px;
 }
@@ -1296,8 +1490,18 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 70%;
   margin: 0 auto;
 }
+@media (max-width: 920px) {
+  .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .var__description .description__text {
+    max-width: 55%;
+  }
+}
 .services-cost .services-cost__repairs {
   margin-top: 91px;
+}
+@media (max-width: 920px) {
+  .services-cost .services-cost__repairs {
+    margin-top: 51px;
+  }
 }
 .services-cost .services-cost__repairs .services-cost__subtitle {
   border-bottom: 1px solid #000000;
@@ -1316,12 +1520,22 @@ h1, h2, h3, h4, h5, h6 {
 .services-cost .services-cost__repairs .repairs__inner .repairs__table tr {
   height: 100px;
 }
+@media (max-width: 920px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr {
+    height: 64px;
+  }
+}
 .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td {
   position: relative;
   width: 33.33%;
 }
 .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__first-column {
   padding: 0 56px;
+}
+@media (max-width: 920px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__first-column {
+    padding: 0 32px 0 12px;
+  }
 }
 .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .second-column {
   display: -webkit-box;
@@ -1334,6 +1548,11 @@ h1, h2, h3, h4, h5, h6 {
 .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .second-column span {
   padding-left: 6px;
 }
+@media (max-width: 920px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .second-column span {
+    padding-left: 21px;
+  }
+}
 .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__btn {
   width: 250px;
   background: #FF880F;
@@ -1343,11 +1562,23 @@ h1, h2, h3, h4, h5, h6 {
   padding: 18px 56px 21px;
   margin-left: 15%;
 }
+@media (max-width: 920px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__btn {
+    padding: 9px 17px;
+    width: 160px;
+    margin-left: 11%;
+  }
+}
 .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__notice {
   padding-left: 56px;
   font-style: italic;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+@media (max-width: 920px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__notice {
+    padding-left: 12px;
+  }
 }
 .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td:not(:first-child) > *::before {
   content: "";
@@ -1357,6 +1588,11 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 25%;
   left: -10%;
+}
+@media (max-width: 920px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td:not(:first-child) > *::before {
+    height: 35.35px;
+  }
 }
 .services-cost .services-cost__repairs .repairs__inner .repairs__table tr:nth-child(odd) {
   background-color: #E4F9FF;
@@ -1381,6 +1617,14 @@ h1, h2, h3, h4, h5, h6 {
   right: -25%;
   top: 0%;
 }
+@media (max-width: 920px) {
+  .services-cost .services-cost__advantages .advantages__background {
+    width: 210px;
+    top: 10%;
+    right: 0;
+    z-index: 0;
+  }
+}
 .services-cost .services-cost__advantages .advantages__content {
   margin-top: 63px;
   display: -webkit-box;
@@ -1396,6 +1640,13 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex: 1 0 670px;
           flex: 1 0 670px;
 }
+@media (max-width: 920px) {
+  .services-cost .services-cost__advantages .advantages__content .advantages__list {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
+}
 .services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item {
   margin-left: 68px;
   max-width: 602px;
@@ -1404,8 +1655,29 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(91.09deg, #5F24A8 39.53%, #05D2FF 107.7%);
   border-radius: 27px;
 }
+@media (max-width: 920px) {
+  .services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item {
+    max-width: 306px;
+    padding: 13px 33px 6px 47px;
+    height: 51px;
+    margin-left: 16px;
+  }
+}
+.services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item .br-tablet {
+  display: none;
+}
+@media (max-width: 920px) {
+  .services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item .br-tablet {
+    display: inline;
+  }
+}
 .services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item:not(:first-child) {
   margin-top: 32px;
+}
+@media (max-width: 920px) {
+  .services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item:not(:first-child) {
+    margin-top: 16.3px;
+  }
 }
 .services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item::before {
   content: "";
@@ -1423,6 +1695,14 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   background-repeat: no-repeat;
 }
+@media (max-width: 920px) {
+  .services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item::before {
+    width: 61px;
+    height: 61px;
+    background-size: 32px;
+    left: -6%;
+  }
+}
 .services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item:nth-child(1)::before {
   background-image: url("../img/icons/turn-off.svg");
 }
@@ -1437,6 +1717,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item:nth-child(5)::before {
   background-image: url("../img/icons/warning.svg");
+  background-position: center 10px;
 }
 .services-cost .services-cost__advantages .advantages__content .advanteges__pic-place {
   display: -webkit-box;
@@ -1445,6 +1726,13 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 920px) {
+  .services-cost .services-cost__advantages .advantages__content .advanteges__pic-place .advanteges__pic {
+    width: 445.95px;
+    height: 256.36px;
+    z-index: 1;
+  }
 }
 
 .consulting_positioning {
@@ -1462,6 +1750,24 @@ h1, h2, h3, h4, h5, h6 {
   height: 1042px;
   z-index: -1;
 }
+@media (max-width: 920px) {
+  .consulting .consulting__background .background__main {
+    display: none;
+  }
+}
+.consulting .consulting__background .background__main_tablet {
+  display: none;
+}
+@media (max-width: 920px) {
+  .consulting .consulting__background .background__main_tablet {
+    display: inline-block;
+    width: 920px;
+    position: absolute;
+    z-index: -1;
+    max-height: 1220px;
+    left: 0;
+  }
+}
 .consulting .consulting__background .background__elems .background__elem {
   position: absolute;
   z-index: -1;
@@ -1470,9 +1776,23 @@ h1, h2, h3, h4, h5, h6 {
   right: 12%;
   top: 32%;
 }
+@media (max-width: 920px) {
+  .consulting .consulting__background .background__elems .background__elem:nth-child(1) {
+    width: 289px;
+    right: -3%;
+    top: 60%;
+  }
+}
 .consulting .consulting__background .background__elems .background__elem:nth-child(2) {
   left: 6%;
   bottom: 6%;
+}
+@media (max-width: 920px) {
+  .consulting .consulting__background .background__elems .background__elem:nth-child(2) {
+    width: 179px;
+    left: 0%;
+    top: 52%;
+  }
 }
 .consulting .consulting__content {
   z-index: 1;
@@ -1502,6 +1822,20 @@ h1, h2, h3, h4, h5, h6 {
   -ms-grid-column-align: center;
       justify-self: center;
 }
+.consulting .consulting__content .consulting__subtitle .subtitle__br {
+  display: none;
+}
+@media (max-width: 920px) {
+  .consulting .consulting__content .consulting__subtitle .subtitle__br {
+    display: inline;
+  }
+}
+@media (max-width: 920px) {
+  .consulting .consulting__content .consulting__subtitle {
+    text-align: center;
+    margin: 25px auto 0 auto;
+  }
+}
 .consulting .consulting__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1510,6 +1844,17 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 64px;
+}
+@media (max-width: 920px) {
+  .consulting .consulting__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .consulting .consulting__inner .consulting__left-column {
   -webkit-box-flex: 0;
@@ -1525,6 +1870,19 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media (max-width: 920px) {
+  .consulting .consulting__inner .consulting__left-column {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 216px;
+            flex: 0 1 216px;
+  }
 }
 .consulting .consulting__inner .consulting__left-column .consulting__qualities .qualities__item {
   position: relative;
@@ -1551,6 +1909,11 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media (max-width: 920px) {
+  .consulting .consulting__inner .consulting__left-column .consulting__number {
+    margin-top: 23px;
+  }
+}
 .consulting .consulting__inner .consulting__left-column .consulting__number .number__caption {
   text-align: center;
 }
@@ -1560,6 +1923,23 @@ h1, h2, h3, h4, h5, h6 {
   padding: 17px 28px 16px;
   background-color: #fff;
   border-radius: 30px;
+}
+@media (max-width: 920px) {
+  .consulting .consulting__inner .consulting__left-column .consulting__number .number__value {
+    line-height: 35px;
+    padding: 13px 45px 12px;
+  }
+}
+@media (max-width: 920px) {
+  .consulting .consulting__inner .consulting__right-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 49px;
+  }
 }
 
 .callback-form {
@@ -1583,6 +1963,11 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   margin: 42px 42px;
   text-align: center;
+}
+@media (max-width: 920px) {
+  .callback-form .callback-form__top .callback-form__headline {
+    margin: 24px 34px;
+  }
 }
 .callback-form .callback-form__content {
   display: -webkit-box;
@@ -1621,6 +2006,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 187px;
   padding-bottom: 100px;
 }
+@media (max-width: 920px) {
+  .why-us {
+    padding-top: 10px;
+  }
+}
 .why-us .why-us__background .background__img {
   position: absolute;
   width: 1920px;
@@ -1632,6 +2022,14 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1924px) {
   .why-us .why-us__background .background__img {
     width: 100%;
+  }
+}
+@media (max-width: 920px) {
+  .why-us .why-us__background .background__img {
+    width: 1782px;
+    height: 990px;
+    top: -10%;
+    left: -93%;
   }
 }
 .why-us .why-us__content {
@@ -1684,8 +2082,23 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   padding-left: 77px;
 }
+@media (max-width: 920px) {
+  .why-us .why-us__content .why-us__inner .why-us__qualities .qualities__item {
+    padding-left: 57px;
+  }
+}
 .why-us .why-us__content .why-us__inner .why-us__qualities .qualities__item:not(:first-child) {
   margin-top: 48px;
+}
+@media (max-width: 920px) {
+  .why-us .why-us__content .why-us__inner .why-us__qualities .qualities__item:not(:first-child) {
+    margin-top: 21px;
+  }
+}
+@media (max-width: 920px) {
+  .why-us .why-us__content .why-us__inner .why-us__qualities .qualities__item:nth-child(4)::before {
+    top: 0%;
+  }
 }
 .why-us .why-us__content .why-us__inner .why-us__qualities .qualities__item::before {
   content: url("/img/icons/star.svg");
@@ -1695,8 +2108,20 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: -25%;
 }
+@media (max-width: 920px) {
+  .why-us .why-us__content .why-us__inner .why-us__qualities .qualities__item::before {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    top: -45%;
+  }
+}
 .why-us .why-us__content .why-us__inner .why-us__guarantees {
   margin-top: 59px;
+}
+@media (max-width: 920px) {
+  .why-us .why-us__content .why-us__inner .why-us__guarantees {
+    text-shadow: 0px 4px 4px rgba(95, 36, 168, 0.43);
+  }
 }
 .why-us .why-us__content .why-us__inner .guarantees__list {
   margin-top: 45px;
@@ -1709,6 +2134,14 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(90deg, #5F24A8 48.79%, rgba(3, 191, 250, 0.84) 84.38%);
   border-radius: 55.5px;
   text-shadow: 2px 6px 15px rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 920px) {
+  .why-us .why-us__content .why-us__inner .guarantees__list .guarantees__item {
+    padding: 39px 43px 39px 137px;
+    font-size: 28px;
+    line-height: 33px;
+    max-height: 111px;
+  }
 }
 .why-us .why-us__content .why-us__inner .guarantees__list .guarantees__item:not(:first-child) {
   margin-top: 32px;
@@ -1728,6 +2161,12 @@ h1, h2, h3, h4, h5, h6 {
   left: 0%;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media (max-width: 920px) {
+  .why-us .why-us__content .why-us__inner .guarantees__list .guarantees__item::before {
+    width: 110px;
+    height: 111px;
+  }
 }
 .why-us .why-us__content .why-us__inner .guarantees__list .guarantees__item:nth-child(1)::before {
   background-image: url("../img/icons/trg__guarantee.svg");

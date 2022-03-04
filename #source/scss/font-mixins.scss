@@ -73,33 +73,60 @@ $clrPerfectOrange:#FF5C00;
 }
 %fontServicesPriceValue {
   @include fontValue("Roboto", 700, normal, 3.9285rem, 64.45px, $clrWhite);
+  @include tabletDown {
+    @include fontValue("Roboto", 700, normal, 2.5rem, 41px, $clrWhite);
+  }
 }
 %fontServicesPriceCurrency {
   @include fontValue("Roboto", 700, normal, 2rem, 15px, $clrWhite);
+  @include tabletDown {
+    @include fontValue("Roboto", 700, normal, 1.7857rem, 29.3px, $clrWhite);
+  }
 }
 %fontServicesVarDescription {
   @include fontValue("Roboto", 500, normal, 1.4285rem, 24px, $clrBlack);
 }
 %fontServicesTableFirstColumn {
   @include fontValue("Roboto", 700, normal, 1.4285rem, 24px, $clrBlack);
+  @include tabletDown {
+    @include fontValue("Roboto", 700, normal, 1.14285rem, 18.75px, $clrBlack);
+  }
 }
 %fontServicesTableSecondColumn {
   @include fontValue("Roboto", 400, normal, 1.4285rem, 23px, $clrBlack);
+  @include tabletDown {
+    @include fontValue("Roboto", 400, normal, 1.14285rem, 18.75px, $clrBlack);
+  }
 }
 %fontServicesTableSecondColumnSpan {
   @include fontValue("Roboto", 700, normal, 2.14285rem, 35px, $clrPerfectOrange);
+  @include tabletDown {
+    @include fontValue("Roboto", 700, normal, 1.4285rem, 23.44px, $clrPerfectOrange);
+  }
 }
 %fontServicesTableBtn {
   @include fontValue("Roboto", 700, normal, 1.14285rem, 19px, $clrWhite);
+  @include tabletDown {
+    @include fontValue("Roboto", 700, normal, 1.0714rem, 17.58px, $clrWhite);
+  }
 }
 %fontServicesTableNotice {
   @include fontValue("Roboto", 400, normal, 1.4285rem, 23px, $clrBlack);
+  @include tabletDown {
+    @include fontValue("Roboto", 400, normal, 1.14285rem, 18.75px, $clrBlack);
+  }
 }
 %fontServicesAdvantagesStatement {
   @include fontValue("Roboto", 700, normal, 2rem, 33px, $clrBlack);
+  @include tabletDown {
+    @include fontValue("Roboto", 700, normal, 1.4285rem, 23.44px, $clrBlack);
+  }
 }
 %fontServicesAdvantagesItem {
   @include fontValue("Roboto", 700, normal, 1.5714rem, 26px, $clrWhite);
+  @include tabletDown {
+    @include fontValue("Roboto", 700, normal, 1.14285rem, 14.91px, $clrWhite);
+  }
 }
 %fontConsultingTitle {
   @include fontValue("Roboto", 700, normal, 1.5714rem, 26px, $clrBlack);

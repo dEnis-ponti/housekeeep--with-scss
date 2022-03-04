@@ -2,7 +2,8 @@ const openingBtn = document.querySelector('.burger-menu');
 const navMobile = document.querySelector('.header__nav-mobile');
 const burgerIcon = document.querySelector('.burger__icon');
 
-openingBtn.addEventListener('click', function () {
+openingBtn.addEventListener('click', function (e) {
+  e.preventDefault();
   navMobile.classList.toggle("_active"); 
 
   if (navMobile.classList.contains("_active")) {
