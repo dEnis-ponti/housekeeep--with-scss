@@ -905,6 +905,8 @@
             font-size: 28px;
             line-height: 33px;
             max-height: 111px;
+            max-width: 608px;
+            display: inline-block;
           }
         }
         .guarantees__item:not(:first-child) {
@@ -951,11 +953,17 @@
   padding: 0 15px;
   & > * {
     padding: 0 15px;
+    @include tabletDown {
+      padding: 0 3px;
+    }
   }
 }
 
 .reviews {
   margin-top: 106px;
+  @include tabletDown {
+    margin-top: 65px;
+  }
   .reviews__background {
     .background__img {
       position: absolute;
@@ -978,6 +986,11 @@
     width: 100%;
     padding: 15px 15px 20px;
     overflow: hidden;
+    @include tabletDown {
+      margin-top: 41px;
+      padding: 15px 3px 20px;
+      margin-bottom: 66-20px;
+    }
     .slider__wrapper {
       max-width: 370px;
       .slider__slide {
@@ -995,6 +1008,11 @@
             .reviewer-avatar {
               padding: 4px 10px;
               border-radius: 50%;
+              @include tabletDown {
+                padding: 2px 3px;
+                width: 82px;
+                height: 82px;
+              }
             }
             .review-id {
               align-self: center;
@@ -1004,6 +1022,15 @@
               .review-date {
                 @extend %fontReviewerDate;
                 margin-top: 11px;
+                .br-tablet {
+                  display: none;
+                  @include tabletDown {
+                    display: inline;
+                  }
+                  @include tinyMobileDown {
+                    display: none;
+                  }
+          }
               }
             }
             .review-socials {
@@ -1021,16 +1048,33 @@
           }
         }
       }
+      .swiper-slide-active + .swiper-slide-next {
+        @include tabletDown {
+          .reviews__item {
+            box-shadow: 0px 3px 15px 10px rgba(0, 0, 0, 0.2);
+            transition: 0.5s;
+          }
+        }
+      }
       .swiper-slide-active {
         .reviews__item {
           box-shadow: 0px 3px 15px 10px rgba(0, 0, 0, 0.2);
           transition: 0.5s;
+          @include tabletDown {
+            box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.1);
+          }
         }
       }
     }
     .swiper-button-prev,
     .swiper-button-next {
       margin-top: 0;
+    }
+    .swiper-button-prev_desktop,
+    .swiper-button-next_desktop {
+      @include tabletDown {
+        display: none;
+      }
     }
     .swiper-button-prev {
       content: url("/img/icons/arrow-left.svg");
