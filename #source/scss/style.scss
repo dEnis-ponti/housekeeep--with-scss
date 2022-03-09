@@ -24,6 +24,30 @@
         user-select: none;
 }
 
+//Anchor's list
+#intro__anchor {
+  display: inline-block;
+    position: absolute;
+
+}
+#services-cost__anchor,
+#why-us__anchor,
+#reviews__anchor,
+#discount__anchor {
+  display: inline-block;
+    position: absolute;
+    top: -231px;
+  @include notebookDown {
+    top: -276px;
+  }
+  @include mobileDown {
+    top: -235px;
+  }
+}
+#discount__anchor {
+    position: relative;
+}
+
 @import "header-flex.scss";
 @import "main.scss";
 @import "footer.scss";
