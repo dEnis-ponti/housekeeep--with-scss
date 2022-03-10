@@ -191,6 +191,10 @@
     margin-top: 0;
     padding: 103px 0 112px;
   }
+  @include mobileDown {
+    background-image: none;
+    padding: 59px 0 468-59px;
+  }
   .content__container--ask {
     max-width: 1920px;
     max-height: 702px;
@@ -200,6 +204,10 @@
     display: flex;
     @include tabletDown {
       align-items: center;
+    }
+    @include mobileDown {
+      display: block;
+      padding: 0 24px;
     }
   }
   .ask-section__pic {
@@ -215,7 +223,15 @@
     top: 0;
     z-index: 0;
     @include mobileDown {
-
+      position: absolute;
+      width: 100%;
+      max-width: none;
+      min-height: 347px;
+      display: flex;
+      left: auto;
+      margin: auto;
+      flex: none;
+      transform: none;
     }
     img {
     width: 100%;
@@ -241,7 +257,17 @@
       @include mobileDown {
         display: inline-block;
         position: absolute;
+        width: 91.65%;
       }
+    }
+  }
+  .ask-section__background-elem {
+    display: none;
+    @include mobileDown {
+      display: inline-block;
+      position: absolute;
+      right: -15%;
+      transform: translateY(28%);
     }
   }
   .ask-section__text {
@@ -253,21 +279,50 @@
       padding-top: 50px;
       padding-bottom: 32px;
     }
-    & > * {
-      display: inline-block;
+    @include mobileDown {
+      display: flex;
+      position: absolute;
+      max-width: 92%;
+      margin: 0;
+      padding: 73px 77px 72px;
     }
-    & > *:not(:first-child) {
+    .text_mobile-positioning {
+      @include mobileDown {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .text_mobile-positioning > * {
+      display: inline-block;
+      @include mobileDown {
+        display: block;
+      }
+    }
+    .text_mobile-positioning > *:not(:first-child) {
       margin-top: 35px;
     }
     .text__title {
-      @extend %fontAskTitle;
+      @extend %fontAskTitle;    
     }
     .title__caption {
       @extend %fontAskCaption;
+      display: inline-block;
+    }
+    .text__title,
+    .title__caption {
+      @include mobileDown {
+        color: #fff;
+        text-align: center;
+      }
     }
     .ask-btn {
+      display: inline-block;
       @extend %fontContentBtn;
       @extend %askBtn;
+      @include mobileDown {
+        width: 285px;
+        align-self: center;
+      }
     }
   }
 }
@@ -292,6 +347,10 @@
       width: 160px;
       height: 168px;
     }
+    @include mobileDown {
+      top: -35px;
+      left: 10%;
+    }
   }
   .services-cost__diagnostic {
     .diagnostic__subtitle {
@@ -299,6 +358,9 @@
     border-bottom: 1px solid #000000;
     display: inline-block;
     margin-top: 19px;
+    @include mobileDown {
+      margin-top: 29px;
+    }
     }
     .diagnostic__vars {
       margin-top: 40px;
