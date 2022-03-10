@@ -65,6 +65,7 @@
         left: 19vw;
         top: 140px;
         @include mobileDown {
+          max-width: 588px;
           top: 296px;
           left: -3vw;
         }
@@ -101,6 +102,7 @@
     @include mobileDown {
       margin-top: 15px;
     }
+    position: relative;
   }
 }
 

@@ -1191,6 +1191,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 920px) and (max-width: 620px) {
   .intro__top .top__background .background__chelik {
+    max-width: 588px;
     top: 296px;
     left: -3vw;
   }
@@ -1216,6 +1217,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .intro__top .order-btn {
   margin-top: 40px;
+  position: relative;
 }
 @media (max-width: 620px) {
   .intro__top .order-btn {
