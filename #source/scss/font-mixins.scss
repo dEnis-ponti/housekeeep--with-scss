@@ -52,6 +52,9 @@ $clrPerfectOrange:#FF5C00;
 }
 %fontContentBtn {
   @include fontValue("Roboto", 700, normal, 1.4285rem, 18.75px, $clrWhite);
+    @include mobileDown {
+      @include fontValue("Roboto", 700, normal, 1.1428rem, 18.75px, $clrWhite);
+    }
 }
 %fontBenefits {
   @include fontValue("Roboto", 700, normal, 1.0714rem, 17.58px, $clrWhite);
@@ -67,9 +70,15 @@ $clrPerfectOrange:#FF5C00;
 }
 %fontServicesTitle {
   @include fontValue("Roboto", 700, normal, 2rem, 32.81px, $clrBlack);
+    @include mobileDown {
+      @include fontValue("Roboto", 700, normal, 1.4285rem, 23.44px, $clrBlack);
+    }
 }
 %fontServicesSubTitle {
   @include fontValue("Roboto", 700, normal, 1.5714rem, 25.78px, $clrBlack);
+    @include mobileDown {
+      @include fontValue("Roboto", 700, normal, 1.2857rem, 21.09px, $clrBlack);
+    }
 }
 %fontServicesPriceValue {
   @include fontValue("Roboto", 700, normal, 3.9285rem, 64.45px, $clrWhite);
@@ -139,9 +148,15 @@ $clrPerfectOrange:#FF5C00;
 }
 %fontConsultingNumberCaption {
   @include fontValue("Roboto", 500, normal, 2.14285rem, 35px, $clrWhite);
+    @include mobileDown {
+      @include fontValue("Roboto", 500, normal, 1.5714rem, 25.78px, $clrWhite);
+    }
 }
 %fontConsultingNumberValue {
   @include fontValue("Roboto", 500, normal, 2.14285rem, 47px, $clrBlack);
+    @include mobileDown {
+      @include fontValue("Roboto", 500, normal, 1.7857rem, 29.3px, $clrBlack);
+    }
 }
 %fontCallbackFormHeadline {
   @include fontValue("Roboto", 500, normal, 1.5714rem, 26px, $clrWhite);

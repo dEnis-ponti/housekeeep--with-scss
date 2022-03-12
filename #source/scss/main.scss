@@ -322,6 +322,7 @@
       @include mobileDown {
         width: 285px;
         align-self: center;
+        text-align: center;
       }
     }
   }
@@ -358,12 +359,13 @@
     border-bottom: 1px solid #000000;
     display: inline-block;
     margin-top: 19px;
+    padding-bottom: 5px;
     @include mobileDown {
       margin-top: 29px;
     }
     }
     .diagnostic__vars {
-      margin-top: 40px;
+      margin-top: 35px;
       padding: 0 80px;
       display: flex;
       justify-content: space-between;
@@ -372,17 +374,27 @@
         padding: 0 10px;
       }
       @include tabletDown {
-        margin-top: 52px;
+        margin-top: 47px;
+      }
+      @include mobileDown {
+        padding: initial;
+        justify-content: space-between;
       }
       .diagnostic-var {
         @include tabletDown {
           display: flex;
           flex-direction: column;
         }
+        @include mobileDown {
+          flex: 0 1 252px;
+        }
         .diagnostic-var__pic {
           @include tabletDown {
             width: 231.4px;
             margin: 0 auto;
+          }
+          @include mobileDown {
+            margin: initial;
           }
         }
         .diagnostic-var__price{
@@ -398,14 +410,12 @@
             border-radius: 50%;
             transform: translate(-84%, 110%);
             @include tabletDown {
-              // transform: translate(170%, -80%);
               transform: translate(25.5vw, -95px);
-              // transform: none;
-              // top: -95px;
-              // left: 25.5vw;
-              // position: relative;
               width: 116.97px;
               height: 116.97px;
+            }
+            @include mobileDown {
+              transform: translate(23.5vw, -100px);
             }
             .price__value {
               margin: 25%;
@@ -437,12 +447,15 @@
             @extend %fontServicesVarDescription;
             @include tabletDown {
             max-width: 55%
+            }
+            @include mobileDown {
+              max-width: 75%
+            }
           }
-          }
-        }
         }
       }
     }
+  }
   .services-cost__repairs {
     margin-top: 91px;
     @include tabletDown {
@@ -452,9 +465,13 @@
       @extend %fontServicesSubTitle;
       border-bottom: 1px solid #000000;
       display: inline-block;
+      padding-bottom: 5px;
     }
     .repairs__inner {
       margin-top: 40px;
+      @include tabletDown {
+        margin-top: 30px;
+      }
       .repairs__table {
         width: 100%;
         border: 1px solid #999999;
@@ -469,6 +486,17 @@
           td {
             position: relative;
             width: 33.33%;
+            @include mobileDown {
+              &:first-child {
+                width: 45%;
+              }
+              &:nth-child(2) {
+                width: 35%;
+              }
+              &:nth-child(3) > * {
+                display: none;
+              }
+            }
             .table__first-column {
               @extend %fontServicesTableFirstColumn;
               padding: 0 56px;
@@ -479,6 +507,9 @@
             .second-column {
               display: flex;
               align-items: center;
+              @include mobileDown {
+                justify-content: space-between;
+              }
               @extend %fontServicesTableSecondColumn;
               span {
                 padding-left: 6px;
@@ -534,11 +565,31 @@
           border-bottom: 1px solid #999999;
         }
       }
+      .table__under-btn {
+        display: none;
+        @include mobileDown {
+          display: flex;
+          margin-top: 16px;
+        }
+        .ask-btn {
+        display: none;
+        @extend %fontContentBtn;
+        @extend %askBtn;
+        @include mobileDown {
+          margin: 0 auto;
+          display: inline-block;
+          text-align: center;
+        }
+      }
+      }
     }
   }
   .services-cost__advantages {
     margin-top: 106px;
     position: relative;
+    @include mobileDown {
+      margin-top: 43px;
+    }
     .advantages__statement {
       max-width: 670px;
       @extend %fontServicesAdvantagesStatement;
@@ -556,15 +607,25 @@
         right: 0;
         z-index: 0;
       }
+      @include mobileDown {
+        right: -5%;
+      }
     }
     .advantages__content {
       margin-top: 63px;
       display: flex;
       flex-flow: row nowrap;
+      @include mobileDown {
+        margin-top: 55px;
+      }
       .advantages__list {
         flex: 1 0 670px;
         @include tabletDown {
           flex: 1 0 50%;
+        }
+        @include mobileDown {
+          z-index: 1;
+          flex: 1 0 60%;
         }
         .advantages__item {
           margin-left: 68px;
@@ -628,7 +689,10 @@
         }
         .advantages__item:nth-child(5)::before {
           background-image: url("../img/icons/warning.svg");
-          background-position: center 10px;
+          background-position: center 40%;
+          @include tabletDown {
+            background-position: center 10px;
+          }
         }
       }
       .advanteges__pic-place {
@@ -641,10 +705,14 @@
           z-index: 1;
           }
         }
+        @include mobileDown {
+          z-index: 0;
+          transform: translateX(-32%);
+        }
       }
     }
   }
-  }
+}
 
 // Секция "Консультация"
 .consulting_positioning {
@@ -652,6 +720,9 @@
 }
 .consulting {
   margin-top: 61px;
+  @include mobileDown {
+    margin-top: 50px;
+  }
   .consulting__background {
     .background__main {
       position: absolute;
@@ -674,6 +745,9 @@
         max-height: 1220px;
         left: 0;
       }
+      @include mobileDown {
+        left: -20%;
+      }
     }
     .background__elems {
       .background__elem {
@@ -688,6 +762,10 @@
         right: -3%;
         top: 60%;
       }
+      @include mobileDown {
+        right: -19%;
+        top: 67%;
+      }
     }
     .background__elem:nth-child(2) {
       left: 6%;
@@ -696,6 +774,10 @@
         width: 179px;
         left: 0%;
         top: 52%;
+      }
+      @include mobileDown {
+        left: -12.5%;
+        top: 21.5%;
       }
     }
     }
@@ -792,6 +874,10 @@
           @include tabletDown {
             line-height: 35px;
             padding: 13px 45px 12px;
+          }
+          @include mobileDown {
+            margin-top: 31px;
+            padding: 16px 37px 15px;
           }
         }
       }

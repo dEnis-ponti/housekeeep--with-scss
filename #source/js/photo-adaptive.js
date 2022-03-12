@@ -12,13 +12,13 @@ document.addEventListener("DOMContentLoaded", function(event)
 
 function resize_info()
 {
-    if (document.documentElement.clientWidth <= 575) {
+    if (document.documentElement.clientWidth <= 620) {
     diagnosticVarPicFirst.setAttribute('src', '/img/diagnostic-with-repair_mobile.png');
     } else {
       diagnosticVarPicFirst.setAttribute('src', '/img/diagnostic-with-repair.png');
     }
 
-    if (document.documentElement.clientWidth <= 575) {
+    if (document.documentElement.clientWidth <= 620) {
       diagnosticVarPicSecond.setAttribute('src', '/img/diagnostic-without-repair_mobile.png');
     } else {
       diagnosticVarPicSecond.setAttribute('src', '/img/diagnostic-without-repair.png');
