@@ -12,7 +12,6 @@ new Swiper('.reviews__slider', {
       '<span class="' + totalClass + '"></span>';
     },
   },
-  slidesPerView: 2,
   spaceBetween: 25,
   slidesPreGroup: 1,
   initialSlide: 1,
@@ -24,11 +23,24 @@ new Swiper('.reviews__slider', {
       centeredSlides: true,
       slidesPerView: 3,
       spaceBetween: 30,
+    },
+    620 : {
+      centeredSlides: false,
+      slidesPerView: 2,
+      spaceBetween: 25,
+      freeMode: {
+      enabled: false,
+      sticky: false,
+    },
+    },
+    560 : {
+      centeredSlides: false,
+      slidesPerView: 1.5,
+      spaceBetween: 25,
+      freeMode: {
+      enabled: true,
+      sticky: false,
+    },
     }
   },
 });
-
-// let activeSlide = document.querySelector('.swiper-slide-active + .swiper-slide');
-// console.log(activeSlide);
-// if()
-// activeSlide.classList.add('_active-tablet');

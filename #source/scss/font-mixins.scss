@@ -178,6 +178,9 @@ $clrPerfectOrange:#FF5C00;
 }
 %fontReviewsTitleCaption {
   @include fontValue("Roboto", 500, normal, 1.7857rem, 29px, $clrBlack);
+    @include mobileDown {
+      @include fontValue("Roboto", 500, normal, 1.5714rem, 25.78px, $clrBlack);
+    }
 }
 %fontReviewerName {
   @include fontValue("Roboto", 700, normal, 1.2857rem, 21px, $clrBlack);
