@@ -2828,6 +2828,11 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -1;
   max-width: 82px;
 }
+@media (max-width: 620px) {
+  .reviews .reviews__slider .slider__pagination-nav .swiper-pagination-fraction {
+    max-width: 135px;
+  }
+}
 .reviews .reviews__slider .slider__pagination-nav .swiper-pagination-current {
   color: #B0B0B0;
 }
@@ -2850,6 +2855,11 @@ h1, h2, h3, h4, h5, h6 {
           flex-flow: column nowrap;
   padding: 86px 0 66px;
 }
+@media (max-width: 620px) {
+  .discount__inner {
+    padding: 41px 0;
+  }
+}
 .discount__inner > * {
   margin: 0 auto;
 }
@@ -2862,8 +2872,18 @@ h1, h2, h3, h4, h5, h6 {
 .discount__inner .discount__caption {
   margin-top: 55px;
 }
+@media (max-width: 620px) {
+  .discount__inner .discount__caption {
+    margin-top: 36px;
+  }
+}
 .discount__inner .callback-form_discount-positioning {
   margin-top: 67px;
+}
+@media (max-width: 620px) {
+  .discount__inner .callback-form_discount-positioning {
+    margin-top: 42px;
+  }
 }
 
 .footer {

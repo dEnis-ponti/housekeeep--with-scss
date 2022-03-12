@@ -40,7 +40,7 @@ new Swiper('.reviews__slider', {
       freeMode: {
       enabled: true,
       sticky: false,
-    },
+      },
     }
   },
 });

@@ -1318,6 +1318,9 @@
         position: inherit;
         z-index: -1;
         max-width: 82px;
+        @include mobileDown {
+          max-width: 135px;
+        }
       }
       .swiper-pagination-current {
         color: #B0B0B0;
@@ -1340,6 +1343,9 @@
   display: flex;
   flex-flow: column nowrap;
   padding: 86px 0 66px;
+  @include mobileDown {
+    padding: 41px 0;
+  }
   & > * {
     margin: 0 auto;
   }
@@ -1353,8 +1359,14 @@
   .discount__caption {
     @extend %fontDiscountCaption;
     margin-top: 55px;
+    @include mobileDown {
+      margin-top: 36px;
+    }
   }
   .callback-form_discount-positioning {
     margin-top: 67px;
+    @include mobileDown {
+      margin-top: 42px;
+    }
   }
 }
