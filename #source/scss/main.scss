@@ -948,6 +948,9 @@
   @include tabletDown {
     padding-top: 10px;
   }
+  @include mobileDown {
+    padding-bottom: 90px;
+  }
   .why-us__background {
     .background__img {
       position: absolute;
@@ -965,11 +968,19 @@
         top: -10%;
         left: -93%;
       }
+      @include mobileDown {
+        left: -114%;
+        width: 1520px;
+        height: 100%;
+      }
     }
   }
   .why-us__content {
     display: flex;
     flex-direction: column;
+    @include mobileDown {
+      padding-bottom: 50px;
+    }
     .why-us__quality-guarantees {
       @extend %fontWhyUsQualityGuarant;
       display: inline-block;
@@ -1001,6 +1012,9 @@
       }
       .why-us__qualities {
         margin-top: 60px;
+        @include mobileDown {
+          margin-top: 46px;
+        }
         .qualities__item {
           position: relative;
           @extend %fontWhyUsQualityGuarant;
@@ -1014,10 +1028,16 @@
           @include tabletDown {
             margin-top: 21px;
           }
+          @include mobileDown {
+            margin-top: 26px;
+          }
         }
         .qualities__item:nth-child(4)::before {
           @include tabletDown {
             top: 0%;
+          }
+          @include mobileDown {
+            top: -20%;
           }
         }
         .qualities__item::before {
@@ -1031,6 +1051,9 @@
             transform: scale(0.7);
             top: -45%;
           }
+          @include mobileDown {
+            top: -70%;
+          }
         }
       }
       .why-us__guarantees {
@@ -1039,9 +1062,19 @@
         @include tabletDown {
           text-shadow: 0px 4px 4px rgba(95, 36, 168, 0.43);
         }
+        @include mobileDown {
+          margin-top: 41px;
+        }
+        @include mobileDown {
+          font-size: 24px;
+          line-height: 28.13px;
+        }
       }
       .guarantees__list {
         margin-top: 45px;
+        @include mobileDown {
+          margin-top: 26px;
+        }
         .guarantees__item {
           max-width: 602px;
           position: relative;
@@ -1057,6 +1090,13 @@
             max-height: 111px;
             max-width: 608px;
             display: inline-block;
+          }
+          @include mobileDown {
+            padding: 33px 23px 39px 118px;
+            font-size: 22px;
+            line-height: 25.78px;
+            max-height: 95px;
+            max-width: 508px;
           }
         }
         .guarantees__item:not(:first-child) {
@@ -1079,6 +1119,10 @@
           @include tabletDown {
             width: 110px;
             height: 111px;
+          }
+          @include mobileDown {
+            width: 94px;
+            height: 95px;
           }
         }
         .guarantees__item:nth-child(1)::before {
@@ -1113,6 +1157,9 @@
   margin-top: 106px;
   @include tabletDown {
     margin-top: 65px;
+  }
+  @include mobileDown {
+    margin-top: 0;
   }
   .reviews__background {
     .background__img {

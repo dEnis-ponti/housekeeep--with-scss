@@ -169,6 +169,9 @@ $clrPerfectOrange:#FF5C00;
 }
 %fontWhyUsQualityGuarant {
   @include fontValue("Roboto", 700, normal, 1.5714rem, 26px, $clrBlack);
+    @include mobileDown {
+      @include fontValue("Roboto", 700, normal, 1.2857rem, 21.09px, $clrBlack);
+    }
 }
 %fontWhyUsTitle {
   @include fontValue("Roboto", 700, normal, 2rem, 33px, $clrBlack);

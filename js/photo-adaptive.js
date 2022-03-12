@@ -2,6 +2,7 @@ console.log(document.documentElement.clientWidth);
 
 const diagnosticVarPicFirst = document.querySelector('.diagnostic-var__pic_first');
 const diagnosticVarPicSecond = document.querySelector('.diagnostic-var__pic_second');
+const whyUsBackgroundPic = document.querySelector('.why-us__background .background__img');
 
 document.addEventListener("DOMContentLoaded", function(event)
 {
@@ -23,4 +24,5 @@ function resize_info()
     } else {
       diagnosticVarPicSecond.setAttribute('src', '/img/diagnostic-without-repair.png');
     }
+    
 }
