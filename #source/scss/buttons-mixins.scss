@@ -7,6 +7,9 @@
   @include tabletDown {
     padding: 11px 20px;
   }
+  @include tinyMobileDown {
+    padding: 11px 12px 13px;
+  }
 }
 
 %orderBtn{

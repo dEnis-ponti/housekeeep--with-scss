@@ -82,6 +82,16 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 23.44px;
   color: #ffffff;
 }
+@media (max-width: 560px) {
+  .header__top .top__container .logo .logo__caption .company-title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2142rem;
+    line-height: 19.92px;
+    color: #ffffff;
+  }
+}
 
 .header__top .top__container .logo .logo__caption .company-slogan {
   font-family: "Roboto";
@@ -90,6 +100,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.285rem;
   line-height: 21.09px;
   color: #ffffff;
+}
+@media (max-width: 560px) {
+  .header__top .top__container .logo .logo__caption .company-slogan {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 16.41px;
+    color: #ffffff;
+  }
 }
 
 .time .time__title .time-caption {
@@ -128,6 +148,17 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.0714rem;
   line-height: 17.58px;
   color: #ffffff;
+}
+@media (max-width: 560px) {
+  .telephone .tel-number,
+.telephone .telephone__button {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 16.41px;
+    color: #ffffff;
+  }
 }
 
 .header__menu .nav-menu__link {
@@ -673,6 +704,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 11px 20px;
   }
 }
+@media (max-width: 560px) {
+  .telephone .telephone__button {
+    padding: 11px 12px 13px;
+  }
+}
 
 .intro__top .order-btn {
   background-color: #FF880F;
@@ -837,6 +873,16 @@ h1, h2, h3, h4, h5, h6 {
     margin: 6px 0 0 80px;
   }
 }
+@media (max-width: 620px) and (max-width: 560px) {
+  .header__top .top__container .socials.socials_mobile {
+    margin: 6px 0 0 54px;
+  }
+}
+@media (max-width: 560px) {
+  .header__top .top__container {
+    padding: 18px 13px;
+  }
+}
 .header__top .top__container > * {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -855,6 +901,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 560px) {
   .header__top .top__container .logo .logo-pic {
     width: 48px;
+    height: 48px;
   }
 }
 .header__top .top__container .logo .logo__caption {
@@ -873,6 +920,11 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 920px) {
   .header__top .top__container .logo .logo__caption {
     margin-left: 14px;
+  }
+}
+@media (max-width: 560px) {
+  .header__top .top__container .logo .logo__caption {
+    margin-left: 5px;
   }
 }
 .header__top .top__container .logo .logo__caption span {
@@ -919,6 +971,21 @@ h1, h2, h3, h4, h5, h6 {
   .header__top .burger-menu .burger__icon._close {
     width: 53px;
     height: 53px;
+  }
+}
+@media (max-width: 560px) {
+  .header__top .burger-menu {
+    margin: 30px 10px 0 0;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .header__top .burger-menu .burger__icon {
+    width: 41px;
+    height: 31px;
+  }
+  .header__top .burger-menu .burger__icon._close {
+    margin-right: 3px;
   }
 }
 
@@ -983,6 +1050,9 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    min-height: 60px;
+    padding: 10px 9px;
+    margin: 0 13px;
   }
 }
 
@@ -1081,6 +1151,20 @@ h1, h2, h3, h4, h5, h6 {
           background-clip: text;
   margin-left: 0px;
 }
+.time.time_tiny-mobile {
+  display: none;
+}
+@media (max-width: 560px) {
+  .time.time_tiny-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .time.time_tiny-mobile .time__title,
+.time.time_tiny-mobile .time__work-hours {
+    color: #000;
+  }
+}
 
 .telephone {
   display: -webkit-box;
@@ -1116,6 +1200,12 @@ h1, h2, h3, h4, h5, h6 {
 .telephone .telephone__button {
   margin-left: 16px;
 }
+@media (max-width: 560px) {
+  .telephone .telephone__button {
+    margin-left: 5px;
+    font-size: 12px;
+  }
+}
 .telephone.telephone_mobile {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1129,6 +1219,11 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-background-clip: text;
           background-clip: text;
   margin-top: 2px;
+}
+@media (max-width: 560px) {
+  .telephone.telephone_mobile .tel-number {
+    margin-left: 5px;
+  }
 }
 .telephone.telephone_mobile .tel-number::before {
   display: none;

@@ -17,9 +17,15 @@ $clrPerfectOrange:#FF5C00;
 // Хедер
 %fontLogoTitle{
   @include fontValue("Roboto", 700, normal, 1.4285rem, 23.44px, $clrWhite);
+    @include tinyMobileDown {
+      @include fontValue("Roboto", 700, normal, 1.2142rem, 19.92px, $clrWhite);
+    }
 }
 %fontLogoSlogan {
   @include fontValue("Roboto", 500, normal, 1.285rem, 21.09px, $clrWhite);
+    @include tinyMobileDown {
+      @include fontValue("Roboto", 500, normal, 1rem, 16.41px, $clrWhite);
+    }
 }
 %fontTimeTitle {
   @include fontValue("Roboto", 400, normal, 1.4285rem, 23.44px, $clrWhite);
@@ -32,6 +38,9 @@ $clrPerfectOrange:#FF5C00;
 }
 %fontTelNumber {
   @include fontValue("Roboto", 500, normal, 1.0714rem, 17.58px, $clrWhite);
+    @include tinyMobileDown {
+      @include fontValue("Roboto", 500, normal, 1rem, 16.41px, $clrWhite);
+    }
 }
 %fontNavMenu {
   @include fontValue("Roboto", 500, normal, 1.1428rem, 18.75px, $clrBlack);

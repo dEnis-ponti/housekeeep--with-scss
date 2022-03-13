@@ -45,7 +45,13 @@
         flex: 1 0 auto;
         align-self: start;
         margin: 6px 0 0 80px;
+        @include tinyMobileDown {
+          margin: 6px 0 0 54px;
+        }
       }
+    }
+    @include tinyMobileDown {
+      padding: 18px 13px;
     }
     & > * {
       align-self: center;
@@ -58,6 +64,7 @@
           }
           @include tinyMobileDown {
             width: 48px;
+            height: 48px;
           }
         }
         .logo__caption {
@@ -67,6 +74,9 @@
           margin-left: 24px;
           @include tabletDown {
             margin-left: 14px;
+          }
+          @include tinyMobileDown {
+            margin-left: 5px;
           }
           span {
             display: inline-block;
@@ -109,6 +119,17 @@
       .burger__icon._close {
         width: 53px;
         height: 53px;
+      }
+    }
+    @include tinyMobileDown {
+      margin: 30px 10px 0 0;
+      align-self: start;
+      .burger__icon {
+        width: 41px;
+        height: 31px;
+      }
+      .burger__icon._close {
+        margin-right: 3px;
       }
     }
   }
@@ -158,6 +179,9 @@
   }
   @include tinyMobileDown {
     justify-content: center;
+    min-height: 60px;
+    padding: 10px 9px;
+    margin: 0 13px;
   }
 }
 
@@ -222,6 +246,16 @@
     margin-left: 0px;
     }
   }
+  &.time_tiny-mobile {
+    display: none;
+    @include tinyMobileDown {
+      display: flex;
+      .time__title,
+      .time__work-hours {
+        color: #000;
+      }
+    }
+  }
 }
 .telephone {
   display: flex;
@@ -249,6 +283,10 @@
   .telephone__button {
     margin-left: 16px;
     @extend %callBtn;
+    @include tinyMobileDown {
+      margin-left: 5px;
+      font-size: 12px;
+    }
   }
   &.telephone_mobile {
     align-items: center;
@@ -258,6 +296,9 @@
     color:transparent;
     background-clip: text;
     margin-top: 2px;
+    @include tinyMobileDown {
+      margin-left: 5px;
+    }
     }
     .tel-number::before {
       display: none;
