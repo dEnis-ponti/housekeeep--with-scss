@@ -197,14 +197,34 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 45.7px;
   color: #ffffff;
 }
+@media (max-width: 560px) {
+  .intro__top .main-title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.7857rem;
+    line-height: 29.3px;
+    color: #ffffff;
+  }
+}
 
-.intro__top .main-title__caption {
+.intro__top .main-title__caption .caption__item {
   font-family: "Roboto";
   font-weight: 500;
   font-style: normal;
   font-size: 1.4285rem;
   line-height: 23.94px;
   color: #ffffff;
+}
+@media (max-width: 560px) {
+  .intro__top .main-title__caption .caption__item {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 20.35px;
+    color: #ffffff;
+  }
 }
 
 .services-cost .services-cost__repairs .repairs__inner .table__under-btn .ask-btn, .ask-section .ask-section__text .ask-btn, .intro__top .order-btn {
@@ -1310,6 +1330,12 @@ h1, h2, h3, h4, h5, h6 {
     background-position: top 0px;
   }
 }
+@media (max-width: 560px) {
+  .intro__background {
+    background-size: 705px;
+    background-position: top 0px;
+  }
+}
 
 .content__container {
   max-width: 1200px;
@@ -1373,12 +1399,51 @@ h1, h2, h3, h4, h5, h6 {
     left: 64vw;
   }
 }
+@media (max-width: 560px) {
+  .intro__top {
+    padding-top: 192px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .intro__top .top__background .background__elem-left {
+    left: -1vw;
+  }
+  .intro__top .top__background .background__chelik {
+    width: 359px;
+    height: 228px;
+    top: 240px;
+    left: 1vw;
+  }
+}
+@media (max-width: 560px) and (max-width: 420px) {
+  .intro__top .top__background .background__chelik {
+    left: -14vw;
+  }
+}
+@media (max-width: 560px) {
+  .intro__top .top__background .background__elem-right {
+    width: 114px;
+    height: 264px;
+    top: 180px;
+    left: 78vw;
+  }
+}
 .intro__top .main-title__caption {
   margin-top: 40px;
+}
+@media (max-width: 560px) {
+  .intro__top .main-title__caption {
+    margin-top: 15px;
+    display: block;
+  }
 }
 .intro__top .main-title__caption .caption__item {
   list-style: inside;
   list-style-position: inside;
+}
+.intro__top .main-title__caption .caption__item .item__text {
+  left: -5px;
+  position: relative;
 }
 .intro__top .order-btn {
   margin-top: 40px;
