@@ -73,15 +73,24 @@ $clrPerfectOrange:#FF5C00;
 }
 %fontBenefits {
   @include fontValue("Roboto", 700, normal, 1.0714rem, 17.58px, $clrWhite);
+    @include tinyMobileDown {
+      @include fontValue("Roboto", 700, normal, 1rem, 16.41px, $clrWhite);
+    }
 }
 %fontAskTitle {
   @include fontValue("Roboto", 500, normal, 2rem, 33.51px, $clrBlack);
     @include tabletDown {
       @include fontValue("Roboto", 500, normal, 1.4285rem, 24px, $clrBlack);
     }
+    @include tinyMobileDown {
+      @include fontValue("Roboto", 500, normal, 1.14285rem, 19.15px, $clrBlack);
+    }
 }
 %fontAskCaption {
   @include fontValue("Roboto", 500, normal, 1.0714rem, 17.95px, $clrBlack);
+    @include tinyMobileDown {
+      @include fontValue("Roboto", 500, normal, 0.9285rem, 15.56px, $clrBlack);
+    }
 }
 %fontServicesTitle {
   @include fontValue("Roboto", 700, normal, 2rem, 32.81px, $clrBlack);

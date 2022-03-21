@@ -194,6 +194,8 @@
       }
       @include tinyMobileDown {
         z-index: 2;
+        width: 157px;
+        height: 167px;
       }
       & > * {
         display: inline-block;
@@ -205,6 +207,10 @@
         height: 97px;
         background: #FFFFFF;
         border-radius: 50%;
+        @include tinyMobileDown {
+          width: 70px;
+          height: 70px;
+        }
       }
       .item__pic img{
         width: 77.31%;
@@ -217,6 +223,7 @@
         @extend %fontBenefits;
         @include tinyMobileDown {
           margin-top: 11px;
+          padding: 0 5px;
         }
       }
     }
@@ -268,6 +275,18 @@
     background-image: none;
     padding: 59px 0 468-59px;
   }
+  @include tinyMobileDown {
+    padding: 59px 0 430px;
+  }
+  @media (max-width:460px) {
+    padding: 59px 0 380px;
+  }
+  @media (max-width:380px) {
+    padding: 59px 0 340px;
+  }
+  @media (max-width:340px) {
+    padding: 59px 0 265px;
+  }
   .content__container--ask {
     max-width: 1920px;
     max-height: 702px;
@@ -281,6 +300,9 @@
     @include mobileDown {
       display: block;
       padding: 0 24px;
+    }
+    @include tinyMobileDown {
+      padding: 0 15px;
     }
   }
   .ask-section__pic {
@@ -305,6 +327,9 @@
       margin: auto;
       flex: none;
       transform: none;
+    }
+    @include tinyMobileDown {
+      z-index: 1;
     }
     img {
     width: 100%;
@@ -331,6 +356,13 @@
         display: inline-block;
         position: absolute;
         width: 91.65%;
+      }
+      @include tinyMobileDown {
+        object-fit: cover;
+        min-width: 335px;
+        min-height: 243px;
+        width: 110%;
+        transform: translateX(-10%);
       }
     }
   }
@@ -363,6 +395,15 @@
       margin: 0;
       padding: 73px 77px 72px;
     }
+    @include tinyMobileDown {
+      padding: 100px 0;
+    }
+    @media (max-width:450px) {
+      padding: 69px 0;
+    }
+    @media (max-width:350px) {
+      padding: 29px 0;
+    }
     .text_mobile-positioning {
       @include mobileDown {
         display: flex;
@@ -377,9 +418,16 @@
     }
     .text_mobile-positioning > *:not(:first-child) {
       margin-top: 35px;
+      @include tinyMobileDown {
+        margin-top: 15px;
+      }
     }
     .text__title {
-      @extend %fontAskTitle;    
+      @extend %fontAskTitle;
+      @include tinyMobileDown {
+        align-self: center;
+        max-width: 300px;
+      }
     }
     .title__caption {
       @extend %fontAskCaption;

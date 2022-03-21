@@ -24,4 +24,8 @@
   padding: 21px 56px;
   box-shadow: 2px 4px 20px rgba(255, 136, 15, 0.5);
   border-radius: 10px;
+  @include tinyMobileDown {
+    padding: 13px 23px;
+    max-width: 200px;
+  }
 }

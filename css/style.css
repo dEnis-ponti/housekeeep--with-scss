@@ -254,6 +254,16 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 17.58px;
   color: #ffffff;
 }
+@media (max-width: 560px) {
+  .intro__bottom .benefits .benefits__item .item__caption {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 16.41px;
+    color: #ffffff;
+  }
+}
 
 .ask-section .ask-section__text .text__title {
   font-family: "Roboto";
@@ -273,6 +283,16 @@ h1, h2, h3, h4, h5, h6 {
     color: #000000;
   }
 }
+@media (max-width: 560px) {
+  .ask-section .ask-section__text .text__title {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.14285rem;
+    line-height: 19.15px;
+    color: #000000;
+  }
+}
 
 .ask-section .ask-section__text .title__caption {
   font-family: "Roboto";
@@ -281,6 +301,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.0714rem;
   line-height: 17.95px;
   color: #000000;
+}
+@media (max-width: 560px) {
+  .ask-section .ask-section__text .title__caption {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.9285rem;
+    line-height: 15.56px;
+    color: #000000;
+  }
 }
 
 .services-cost .services-cost__title {
@@ -744,6 +774,12 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-shadow: 2px 4px 20px rgba(255, 136, 15, 0.5);
           box-shadow: 2px 4px 20px rgba(255, 136, 15, 0.5);
   border-radius: 10px;
+}
+@media (max-width: 560px) {
+  .services-cost .services-cost__repairs .repairs__inner .table__under-btn .ask-btn, .ask-section .ask-section__text .ask-btn {
+    padding: 13px 23px;
+    max-width: 200px;
+  }
 }
 
 .wrapper {
@@ -1545,6 +1581,8 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 560px) {
   .intro__bottom .benefits .benefits__item {
     z-index: 2;
+    width: 157px;
+    height: 167px;
   }
 }
 .intro__bottom .benefits .benefits__item > * {
@@ -1560,6 +1598,12 @@ h1, h2, h3, h4, h5, h6 {
   background: #FFFFFF;
   border-radius: 50%;
 }
+@media (max-width: 560px) {
+  .intro__bottom .benefits .benefits__item .item__pic {
+    width: 70px;
+    height: 70px;
+  }
+}
 .intro__bottom .benefits .benefits__item .item__pic img {
   width: 77.31%;
   height: 77.31%;
@@ -1572,6 +1616,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 560px) {
   .intro__bottom .benefits .benefits__item .item__caption {
     margin-top: 11px;
+    padding: 0 5px;
   }
 }
 .intro__bottom .benefits .benefits__item:not(:first-child) {
@@ -1631,6 +1676,26 @@ h1, h2, h3, h4, h5, h6 {
     padding: 59px 0 409px;
   }
 }
+@media (max-width: 560px) {
+  .ask-section {
+    padding: 59px 0 430px;
+  }
+}
+@media (max-width: 460px) {
+  .ask-section {
+    padding: 59px 0 380px;
+  }
+}
+@media (max-width: 380px) {
+  .ask-section {
+    padding: 59px 0 340px;
+  }
+}
+@media (max-width: 340px) {
+  .ask-section {
+    padding: 59px 0 265px;
+  }
+}
 .ask-section .content__container--ask {
   max-width: 1920px;
   max-height: 702px;
@@ -1652,6 +1717,11 @@ h1, h2, h3, h4, h5, h6 {
   .ask-section .content__container--ask {
     display: block;
     padding: 0 24px;
+  }
+}
+@media (max-width: 560px) {
+  .ask-section .content__container--ask {
+    padding: 0 15px;
   }
 }
 .ask-section .ask-section__pic {
@@ -1692,6 +1762,11 @@ h1, h2, h3, h4, h5, h6 {
             transform: none;
   }
 }
+@media (max-width: 560px) {
+  .ask-section .ask-section__pic {
+    z-index: 1;
+  }
+}
 .ask-section .ask-section__pic img {
   width: 100%;
   -webkit-box-shadow: 0px 4px 15px 5px rgba(95, 36, 168, 0.5);
@@ -1724,6 +1799,17 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     position: absolute;
     width: 91.65%;
+  }
+}
+@media (max-width: 560px) {
+  .ask-section .ask-section__pic .pic_mobile {
+    -o-object-fit: cover;
+       object-fit: cover;
+    min-width: 335px;
+    min-height: 243px;
+    width: 110%;
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
   }
 }
 .ask-section .ask-section__background-elem {
@@ -1768,6 +1854,21 @@ h1, h2, h3, h4, h5, h6 {
     padding: 73px 77px 72px;
   }
 }
+@media (max-width: 560px) {
+  .ask-section .ask-section__text {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 450px) {
+  .ask-section .ask-section__text {
+    padding: 69px 0;
+  }
+}
+@media (max-width: 350px) {
+  .ask-section .ask-section__text {
+    padding: 29px 0;
+  }
+}
 @media (max-width: 620px) {
   .ask-section .ask-section__text .text_mobile-positioning {
     display: -webkit-box;
@@ -1789,6 +1890,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 .ask-section .ask-section__text .text_mobile-positioning > *:not(:first-child) {
   margin-top: 35px;
+}
+@media (max-width: 560px) {
+  .ask-section .ask-section__text .text_mobile-positioning > *:not(:first-child) {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 560px) {
+  .ask-section .ask-section__text .text__title {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    max-width: 300px;
+  }
 }
 .ask-section .ask-section__text .title__caption {
   display: inline-block;
