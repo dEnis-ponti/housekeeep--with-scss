@@ -397,6 +397,16 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24px;
   color: #000000;
 }
+@media (max-width: 560px) {
+  .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .var__description .description__text {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.14285rem;
+    line-height: 19.15px;
+    color: #000000;
+  }
+}
 
 .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__first-column {
   font-family: "Roboto";
@@ -1955,6 +1965,11 @@ h1, h2, h3, h4, h5, h6 {
     left: 10%;
   }
 }
+@media (max-width: 560px) {
+  .services-cost .services__background {
+    left: 15%;
+  }
+}
 .services-cost .services-cost__diagnostic .diagnostic__subtitle {
   border-bottom: 1px solid #000000;
   display: inline-block;
@@ -1995,6 +2010,14 @@ h1, h2, h3, h4, h5, h6 {
             justify-content: space-between;
   }
 }
+@media (max-width: 560px) {
+  .services-cost .services-cost__diagnostic .diagnostic__vars {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 @media (max-width: 920px) {
   .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var {
     display: -webkit-box;
@@ -2022,6 +2045,11 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 620px) {
   .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .diagnostic-var__pic {
     margin: initial;
+  }
+}
+@media (max-width: 560px) {
+  .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .diagnostic-var__pic {
+    margin: 0 auto;
   }
 }
 .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .diagnostic-var__price {
@@ -2053,6 +2081,12 @@ h1, h2, h3, h4, h5, h6 {
             transform: translate(23.5vw, -100px);
   }
 }
+@media (max-width: 560px) {
+  .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .diagnostic-var__price .price__inner {
+    -webkit-transform: translate(51.5vw, -100px);
+            transform: translate(51.5vw, -100px);
+  }
+}
 .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .diagnostic-var__price .price__inner .price__value {
   margin: 25%;
   display: -webkit-box;
@@ -2078,6 +2112,11 @@ h1, h2, h3, h4, h5, h6 {
 .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .var__description {
   margin-top: 46px;
 }
+@media (max-width: 560px) {
+  .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .var__description {
+    margin-top: 16px;
+  }
+}
 .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .var__description .description__text {
   text-align: center;
   max-width: 70%;
@@ -2091,6 +2130,16 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 620px) {
   .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .var__description .description__text {
     max-width: 75%;
+  }
+}
+@media (max-width: 560px) {
+  .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var .var__description .description__text {
+    max-width: 65%;
+  }
+}
+@media (max-width: 560px) {
+  .services-cost .services-cost__diagnostic .diagnostic__vars .diagnostic-var:last-child {
+    margin-top: 34px;
   }
 }
 .services-cost .services-cost__repairs {

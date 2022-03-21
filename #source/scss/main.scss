@@ -477,6 +477,9 @@
       top: -35px;
       left: 10%;
     }
+    @include tinyMobileDown {
+      left: 15%;
+    }
   }
   .services-cost__diagnostic {
     .diagnostic__subtitle {
@@ -505,6 +508,9 @@
         padding: initial;
         justify-content: space-between;
       }
+      @include tinyMobileDown {
+        flex-direction: column;
+      }
       .diagnostic-var {
         @include tabletDown {
           display: flex;
@@ -520,6 +526,9 @@
           }
           @include mobileDown {
             margin: initial;
+          }
+          @include tinyMobileDown {
+            margin: 0 auto;
           }
         }
         .diagnostic-var__price{
@@ -541,6 +550,9 @@
             }
             @include mobileDown {
               transform: translate(23.5vw, -100px);
+            }
+            @include tinyMobileDown {
+              transform: translate(51.5vw, -100px);
             }
             .price__value {
               margin: 25%;
@@ -565,6 +577,9 @@
           }
         .var__description {
           margin-top: 46px;
+          @include tinyMobileDown {
+            margin-top: 16px;
+          }
           .description__text {
             text-align: center;
             max-width: 70%;
@@ -576,7 +591,15 @@
             @include mobileDown {
               max-width: 75%
             }
+            @include tinyMobileDown {
+              max-width: 65%;
+            }
           }
+        }
+      }
+      .diagnostic-var:last-child {
+        @include tinyMobileDown {
+          margin-top: 34px;
         }
       }
     }
