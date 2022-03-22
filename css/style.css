@@ -426,8 +426,18 @@ h1, h2, h3, h4, h5, h6 {
     color: #000000;
   }
 }
+@media (max-width: 560px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__first-column {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.21428rem;
+    line-height: 19.92px;
+    color: #000000;
+  }
+}
 
-.services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .second-column {
+.services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__second-column {
   font-family: "Roboto";
   font-weight: 400;
   font-style: normal;
@@ -436,7 +446,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #000000;
 }
 @media (max-width: 920px) {
-  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .second-column {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__second-column {
     font-family: "Roboto";
     font-weight: 400;
     font-style: normal;
@@ -446,7 +456,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .second-column span {
+.services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__second-column span {
   font-family: "Roboto";
   font-weight: 700;
   font-style: normal;
@@ -455,7 +465,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #FF5C00;
 }
 @media (max-width: 920px) {
-  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .second-column span {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__second-column span {
     font-family: "Roboto";
     font-weight: 700;
     font-style: normal;
@@ -2178,6 +2188,19 @@ h1, h2, h3, h4, h5, h6 {
     height: 64px;
   }
 }
+@media (max-width: 560px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr {
+    height: 97px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-bottom: 1px solid #999999;
+  }
+}
 .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td {
   position: relative;
   width: 33.33%;
@@ -2193,6 +2216,16 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 }
+@media (max-width: 560px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td:first-child, .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td:nth-child(2) {
+    width: 100%;
+  }
+}
 .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__first-column {
   padding: 0 56px;
 }
@@ -2201,7 +2234,13 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 32px 0 12px;
   }
 }
-.services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .second-column {
+@media (max-width: 560px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__first-column {
+    text-align: center;
+    padding: 0 26px;
+  }
+}
+.services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__second-column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2210,18 +2249,23 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
 }
 @media (max-width: 620px) {
-  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .second-column {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__second-column {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
 }
-.services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .second-column span {
+.services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__second-column span {
   padding-left: 6px;
 }
 @media (max-width: 920px) {
-  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .second-column span {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__second-column span {
     padding-left: 21px;
+  }
+}
+@media (max-width: 560px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__second-column span {
+    padding-left: 10px;
   }
 }
 .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td .table__btn {
@@ -2265,6 +2309,38 @@ h1, h2, h3, h4, h5, h6 {
     height: 35.35px;
   }
 }
+@media (max-width: 560px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td:not(:first-child) > *::before {
+    display: none;
+  }
+}
+@media (max-width: 560px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+@media (max-width: 560px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr td:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 7px;
+  }
+}
 .services-cost .services-cost__repairs .repairs__inner .repairs__table tr:nth-child(odd) {
   background-color: #E4F9FF;
   background-clip: padding-box;
@@ -2272,6 +2348,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 .services-cost .services-cost__repairs .repairs__inner .repairs__table tr:not(:last-child) td {
   border-bottom: 1px solid #999999;
+}
+@media (max-width: 560px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr:not(:last-child) td {
+    border-bottom: none;
+  }
+}
+@media (max-width: 560px) {
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr:last-child td {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services-cost .services-cost__repairs .repairs__inner .repairs__table tr:last-child td .table__notice {
+    text-align: center;
+  }
 }
 .services-cost .services-cost__repairs .repairs__inner .table__under-btn {
   display: none;

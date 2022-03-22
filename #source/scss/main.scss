@@ -631,6 +631,12 @@
           @include tabletDown {
             height: 64px;
           }
+          @include tinyMobileDown {
+            height: 97px;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid #999999;
+          }
           td {
             position: relative;
             width: 33.33%;
@@ -645,14 +651,25 @@
                 display: none;
               }
             }
+            @include tinyMobileDown {
+              &:first-child,
+              &:nth-child(2) {
+                width: 100%;
+              }
+              flex: 1 0 50%;
+            }
             .table__first-column {
               @extend %fontServicesTableFirstColumn;
               padding: 0 56px;
               @include tabletDown {
                 padding: 0 32px 0 12px;
               }
+              @include tinyMobileDown {
+                text-align: center;
+                padding: 0 26px;
+              }
             }
-            .second-column {
+            .table__second-column {
               display: flex;
               align-items: center;
               @include mobileDown {
@@ -664,6 +681,9 @@
                 @extend %fontServicesTableSecondColumnSpan;
                 @include tabletDown {
                   padding-left: 21px;
+                }
+                @include tinyMobileDown {
+                  padding-left: 10px;
                 }
               }
             }
@@ -702,6 +722,24 @@
             @include tabletDown {
               height: 35.35px;
             }
+            @include tinyMobileDown {
+              display: none;
+            }
+          }
+          td:first-child {
+            @include tinyMobileDown {
+              display: flex;
+              justify-content: center;
+              align-items: flex-end;
+            }
+          }
+          td:nth-child(2) {
+            @include tinyMobileDown {
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+              margin-top: 7px;
+            }
           }
         }
         tr:nth-child(odd) {
@@ -711,6 +749,19 @@
         }
         tr:not(:last-child) td {
           border-bottom: 1px solid #999999;
+          @include tinyMobileDown {
+            border-bottom: none;
+          }
+        }
+        tr:last-child {
+          @include tinyMobileDown {
+            td {
+              align-items: center;
+              .table__notice {
+                text-align: center;
+              }
+            }
+          }
         }
       }
       .table__under-btn {

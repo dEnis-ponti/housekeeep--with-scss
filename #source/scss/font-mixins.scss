@@ -127,6 +127,9 @@ $clrPerfectOrange:#FF5C00;
   @include tabletDown {
     @include fontValue("Roboto", 700, normal, 1.14285rem, 18.75px, $clrBlack);
   }
+  @include tinyMobileDown {
+    @include fontValue("Roboto", 700, normal, 1.21428rem, 19.92px, $clrBlack);
+  }
 }
 %fontServicesTableSecondColumn {
   @include fontValue("Roboto", 400, normal, 1.4285rem, 23px, $clrBlack);
