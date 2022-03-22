@@ -513,7 +513,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.services-cost .services-cost__advantages .advantages__statement {
+.services-cost .services-cost__breakdowns .breakdowns__statement {
   font-family: "Roboto";
   font-weight: 700;
   font-style: normal;
@@ -522,7 +522,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #000000;
 }
 @media (max-width: 920px) {
-  .services-cost .services-cost__advantages .advantages__statement {
+  .services-cost .services-cost__breakdowns .breakdowns__statement {
     font-family: "Roboto";
     font-weight: 700;
     font-style: normal;
@@ -532,7 +532,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.why-us .why-us__content .why-us__inner .guarantees__list .guarantees__item, .services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item {
+.why-us .why-us__content .why-us__inner .guarantees__list .guarantees__item, .services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list .breakdowns__item {
   font-family: "Roboto";
   font-weight: 700;
   font-style: normal;
@@ -541,7 +541,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
 @media (max-width: 920px) {
-  .why-us .why-us__content .why-us__inner .guarantees__list .guarantees__item, .services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item {
+  .why-us .why-us__content .why-us__inner .guarantees__list .guarantees__item, .services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list .breakdowns__item {
     font-family: "Roboto";
     font-weight: 700;
     font-style: normal;
@@ -2385,28 +2385,33 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
 }
-.services-cost .services-cost__advantages {
+.services-cost .services-cost__breakdowns {
   margin-top: 106px;
   position: relative;
 }
 @media (max-width: 620px) {
-  .services-cost .services-cost__advantages {
+  .services-cost .services-cost__breakdowns {
     margin-top: 43px;
   }
 }
-.services-cost .services-cost__advantages .advantages__statement {
+@media (max-width: 560px) {
+  .services-cost .services-cost__breakdowns {
+    margin-top: 24px;
+  }
+}
+.services-cost .services-cost__breakdowns .breakdowns__statement {
   max-width: 670px;
 }
-.services-cost .services-cost__advantages .advantages__statement span {
+.services-cost .services-cost__breakdowns .breakdowns__statement span {
   color: #676767;
 }
-.services-cost .services-cost__advantages .advantages__background {
+.services-cost .services-cost__breakdowns .breakdowns__background {
   position: absolute;
   right: -25%;
   top: 0%;
 }
 @media (max-width: 920px) {
-  .services-cost .services-cost__advantages .advantages__background {
+  .services-cost .services-cost__breakdowns .breakdowns__background {
     width: 210px;
     top: 10%;
     right: 0;
@@ -2414,11 +2419,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 620px) {
-  .services-cost .services-cost__advantages .advantages__background {
+  .services-cost .services-cost__breakdowns .breakdowns__background {
     right: -5%;
   }
 }
-.services-cost .services-cost__advantages .advantages__content {
+@media (max-width: 560px) {
+  .services-cost .services-cost__breakdowns .breakdowns__background {
+    right: 0;
+    top: 25%;
+  }
+}
+.services-cost .services-cost__breakdowns .breakdowns__content {
   margin-top: 63px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2429,31 +2440,50 @@ h1, h2, h3, h4, h5, h6 {
           flex-flow: row nowrap;
 }
 @media (max-width: 620px) {
-  .services-cost .services-cost__advantages .advantages__content {
+  .services-cost .services-cost__breakdowns .breakdowns__content {
     margin-top: 55px;
   }
 }
-.services-cost .services-cost__advantages .advantages__content .advantages__list {
+@media (max-width: 560px) {
+  .services-cost .services-cost__breakdowns .breakdowns__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    margin-top: 22px;
+  }
+}
+.services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 670px;
           flex: 1 0 670px;
 }
 @media (max-width: 920px) {
-  .services-cost .services-cost__advantages .advantages__content .advantages__list {
+  .services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 50%;
             flex: 1 0 50%;
   }
 }
 @media (max-width: 620px) {
-  .services-cost .services-cost__advantages .advantages__content .advantages__list {
+  .services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list {
     z-index: 1;
     -webkit-box-flex: 1;
         -ms-flex: 1 0 60%;
             flex: 1 0 60%;
   }
 }
-.services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item {
+@media (max-width: 560px) {
+  .services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+.services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list .breakdowns__item {
   margin-left: 68px;
   max-width: 602px;
   position: relative;
@@ -2462,30 +2492,35 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 27px;
 }
 @media (max-width: 920px) {
-  .services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item {
+  .services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list .breakdowns__item {
     max-width: 306px;
     padding: 13px 33px 6px 47px;
     height: 51px;
     margin-left: 16px;
   }
 }
-.services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item .br-tablet {
+@media (max-width: 560px) {
+  .services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list .breakdowns__item {
+    padding: 13px 20px 6px 47px;
+  }
+}
+.services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list .breakdowns__item .br-tablet {
   display: none;
 }
 @media (max-width: 920px) {
-  .services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item .br-tablet {
+  .services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list .breakdowns__item .br-tablet {
     display: inline;
   }
 }
-.services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item:not(:first-child) {
+.services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list .breakdowns__item:not(:first-child) {
   margin-top: 32px;
 }
 @media (max-width: 920px) {
-  .services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item:not(:first-child) {
+  .services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list .breakdowns__item:not(:first-child) {
     margin-top: 16.3px;
   }
 }
-.services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item::before {
+.services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list .breakdowns__item::before {
   content: "";
   width: 122px;
   height: 122px;
@@ -2502,35 +2537,35 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
 }
 @media (max-width: 920px) {
-  .services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item::before {
+  .services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list .breakdowns__item::before {
     width: 61px;
     height: 61px;
     background-size: 32px;
     left: -6%;
   }
 }
-.services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item:nth-child(1)::before {
+.services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list .breakdowns__item:nth-child(1)::before {
   background-image: url("../img/icons/turn-off.svg");
 }
-.services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item:nth-child(2)::before {
+.services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list .breakdowns__item:nth-child(2)::before {
   background-image: url("../img/icons/water-drop.svg");
 }
-.services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item:nth-child(3)::before {
+.services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list .breakdowns__item:nth-child(3)::before {
   background-image: url("../img/icons/washing-machine.svg");
 }
-.services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item:nth-child(4)::before {
+.services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list .breakdowns__item:nth-child(4)::before {
   background-image: url("../img/icons/washing.svg");
 }
-.services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item:nth-child(5)::before {
+.services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list .breakdowns__item:nth-child(5)::before {
   background-image: url("../img/icons/warning.svg");
   background-position: center 40%;
 }
 @media (max-width: 920px) {
-  .services-cost .services-cost__advantages .advantages__content .advantages__list .advantages__item:nth-child(5)::before {
+  .services-cost .services-cost__breakdowns .breakdowns__content .breakdowns__list .breakdowns__item:nth-child(5)::before {
     background-position: center 10px;
   }
 }
-.services-cost .services-cost__advantages .advantages__content .advanteges__pic-place {
+.services-cost .services-cost__breakdowns .breakdowns__content .advanteges__pic-place {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2539,17 +2574,33 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
 }
 @media (max-width: 920px) {
-  .services-cost .services-cost__advantages .advantages__content .advanteges__pic-place .advanteges__pic {
+  .services-cost .services-cost__breakdowns .breakdowns__content .advanteges__pic-place .advanteges__pic {
     width: 445.95px;
     height: 256.36px;
     z-index: 1;
   }
 }
+@media (max-width: 920px) and (max-width: 560px) {
+  .services-cost .services-cost__breakdowns .breakdowns__content .advanteges__pic-place .advanteges__pic {
+    width: 280px;
+    height: 161px;
+  }
+}
 @media (max-width: 620px) {
-  .services-cost .services-cost__advantages .advantages__content .advanteges__pic-place {
+  .services-cost .services-cost__breakdowns .breakdowns__content .advanteges__pic-place {
     z-index: 0;
     -webkit-transform: translateX(-32%);
             transform: translateX(-32%);
+  }
+}
+@media (max-width: 560px) {
+  .services-cost .services-cost__breakdowns .breakdowns__content .advanteges__pic-place {
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+    margin-top: 21px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 

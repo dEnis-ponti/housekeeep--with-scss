@@ -783,20 +783,23 @@
       }
     }
   }
-  .services-cost__advantages {
+  .services-cost__breakdowns {
     margin-top: 106px;
     position: relative;
     @include mobileDown {
       margin-top: 43px;
     }
-    .advantages__statement {
+    @include tinyMobileDown {
+      margin-top: 24px;
+    }
+    .breakdowns__statement {
       max-width: 670px;
       @extend %fontServicesAdvantagesStatement;
       span {
         color: #676767;
       }
     }
-    .advantages__background {
+    .breakdowns__background {
       position: absolute;
       right: -25%;
       top: 0%;
@@ -809,15 +812,23 @@
       @include mobileDown {
         right: -5%;
       }
+      @include tinyMobileDown {
+        right: 0;
+        top: 25%;
+      }
     }
-    .advantages__content {
+    .breakdowns__content {
       margin-top: 63px;
       display: flex;
       flex-flow: row nowrap;
       @include mobileDown {
         margin-top: 55px;
       }
-      .advantages__list {
+      @include tinyMobileDown {
+        flex-flow: column nowrap;
+        margin-top: 22px;
+      }
+      .breakdowns__list {
         flex: 1 0 670px;
         @include tabletDown {
           flex: 1 0 50%;
@@ -826,7 +837,11 @@
           z-index: 1;
           flex: 1 0 60%;
         }
-        .advantages__item {
+        @include tinyMobileDown {
+          flex: 1 0 100%;
+          align-self: center;
+        }
+        .breakdowns__item {
           margin-left: 68px;
           max-width: 602px;
           position: relative;
@@ -840,6 +855,9 @@
             height: 51px;
             margin-left: 16px;
           }
+          @include tinyMobileDown {
+            padding: 13px 20px 6px 47px;
+          }
           .br-tablet {
             display: none;
             @include tabletDown {
@@ -847,13 +865,13 @@
             }
           }
         }
-        .advantages__item:not(:first-child) {
+        .breakdowns__item:not(:first-child) {
           margin-top: 32px;
           @include tabletDown {
             margin-top: 16.3px;
           }
         }
-        .advantages__item::before {
+        .breakdowns__item::before {
           content: "";
           width: 122px;
           height: 122px;
@@ -874,19 +892,19 @@
             left: -6%;
           }
         }
-        .advantages__item:nth-child(1)::before {
+        .breakdowns__item:nth-child(1)::before {
           background-image: url("../img/icons/turn-off.svg");
         }
-        .advantages__item:nth-child(2)::before {
+        .breakdowns__item:nth-child(2)::before {
           background-image: url("../img/icons/water-drop.svg");
         }
-        .advantages__item:nth-child(3)::before {
+        .breakdowns__item:nth-child(3)::before {
           background-image: url("../img/icons/washing-machine.svg");
         }
-        .advantages__item:nth-child(4)::before {
+        .breakdowns__item:nth-child(4)::before {
           background-image: url("../img/icons/washing.svg");
         }
-        .advantages__item:nth-child(5)::before {
+        .breakdowns__item:nth-child(5)::before {
           background-image: url("../img/icons/warning.svg");
           background-position: center 40%;
           @include tabletDown {
@@ -902,11 +920,20 @@
           width: 445.95px;
           height: 256.36px;
           z-index: 1;
+          @include tinyMobileDown {
+            width: 280px;
+            height: 161px;
+          }
           }
         }
         @include mobileDown {
           z-index: 0;
           transform: translateX(-32%);
+        }
+        @include tinyMobileDown {
+          transform: translateX(5%);
+          margin-top: 21px;
+          align-self: center;
         }
       }
     }
