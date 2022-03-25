@@ -1209,7 +1209,7 @@
       margin: 24px 34px;
       }
     @media (max-width:420px) {
-        font-size: 15px;
+        font-size: 1.0714rem;
         line-height: 17.58px;
         margin: 18px 22px;
       }
@@ -1231,7 +1231,7 @@
       @media (max-width:420px) {
       margin: 22px auto 0;
       padding: 13px 20px;
-      font-size: 17px;
+      font-size: 1.2143rem;
       line-height: 20px;
       }
     }
@@ -1246,7 +1246,7 @@
       @media (max-width:420px) {
       margin: 22px auto 0;
       padding: 13px 26px;
-      font-size: 16px;
+      font-size: 1.1429rem;
       line-height: 19px;
       }
     }
@@ -1254,7 +1254,7 @@
       @extend %fontCallbackFormCaption;
       margin: 27px auto 46px;
       @media (max-width:420px) {
-      font-size: 14px;
+      font-size: 1rem;
       line-height: 16px;
       margin: 22px auto 25px;
       }
@@ -1297,6 +1297,11 @@
         width: 1520px;
         height: 100%;
       }
+      @include tinyMobileDown {
+        top: -10%;
+        left: -710px;
+        opacity: 0.7;
+      }
     }
   }
   .why-us__content {
@@ -1305,6 +1310,9 @@
     @include mobileDown {
       padding-bottom: 50px;
     }
+    @include tinyMobileDown {
+      padding-bottom: 12px;
+    }
     .why-us__quality-guarantees {
       @extend %fontWhyUsQualityGuarant;
       display: inline-block;
@@ -1312,12 +1320,19 @@
       border-radius: 20px;
       padding: 32px 54px;
       margin: 0 auto;
+      @include tinyMobileDown {
+        padding: 14px 46px;
+      }
     }
     .why-us__inner {
       display: flex;
       flex-direction: column;
       max-width: 670px;
       margin-top: 43px;
+      @include tinyMobileDown {
+        text-align: center;
+        margin-top: 36px;
+      }
       .why-us__title {
         @extend %fontWhyUsTitle;
         padding-left: 4px;
@@ -1333,6 +1348,13 @@
         width: 263px;
         height: 3px;
         background: linear-gradient(90deg, #5F24A8 56.74%, rgba(95, 36, 168, 0) 74.86%);
+        @include tinyMobileDown {
+          width: 177px;
+          margin-left: auto;
+          margin-right: auto;
+          left: 47px;
+          right: 0;
+        }
       }
       .why-us__qualities {
         margin-top: 60px;
@@ -1341,10 +1363,28 @@
         }
         .qualities__item {
           position: relative;
+          display: flex;
+          align-items: center;
+          @include tinyMobileDown {
+            flex-direction: column;
+          }
+        }
+        & span {
+          padding-left: 17px;
+          @include tinyMobileDown {
+            padding-left: 0px;
+          }
           @extend %fontWhyUsQualityGuarant;
-          padding-left: 77px;
-          @include tabletDown {
-            padding-left: 57px;
+        }
+        & .br_tinie {
+          display: none;
+          @include tinyMobileDown {
+            display: inline;
+          }
+        }
+        & br {
+          @include tinyMobileDown {
+            display: none;
           }
         }
         .qualities__item:not(:first-child) {
@@ -1355,6 +1395,9 @@
           @include mobileDown {
             margin-top: 26px;
           }
+          @include tinyMobileDown {
+            margin-top: 18px;
+          }
         }
         .qualities__item:nth-child(4)::before {
           @include tabletDown {
@@ -1364,19 +1407,10 @@
             top: -20%;
           }
         }
-        .qualities__item::before {
-          content: url("/img/icons/star.svg");
-          width: 50px;
-          height: 50px;
-          position: absolute;
-          left: 0;
-          top: -25%;
+        .qualities-pic {
           @include tabletDown {
             transform: scale(0.7);
             top: -45%;
-          }
-          @include mobileDown {
-            top: -70%;
           }
         }
       }
@@ -1390,14 +1424,33 @@
           margin-top: 41px;
         }
         @include mobileDown {
-          font-size: 24px;
+          font-size: 1.7143rem;
           line-height: 28.13px;
+        }
+        @include tinyMobileDown {
+          margin-top: 27px;
+          font-size: 1.0714rem;
+          line-height: 17.58px;
+          br {
+            display: none;
+          }
+        }
+        .br_tinie {
+          display: none;
+          @include tinyMobileDown {
+            display: inline;
+          }
         }
       }
       .guarantees__list {
         margin-top: 45px;
         @include mobileDown {
           margin-top: 26px;
+        }
+        @include tinyMobileDown {
+          margin-top: 17px;
+          display: flex;
+          flex-direction: column;
         }
         .guarantees__item {
           max-width: 602px;
@@ -1409,7 +1462,7 @@
           text-shadow: 2px 6px 15px rgba(255, 255, 255, 0.5);
           @include tabletDown {
             padding: 39px 43px 39px 137px;
-            font-size: 28px;
+            font-size: 2rem;
             line-height: 33px;
             max-height: 111px;
             max-width: 608px;
@@ -1417,10 +1470,22 @@
           }
           @include mobileDown {
             padding: 33px 23px 39px 118px;
-            font-size: 22px;
+            font-size: 1.5714rem;
             line-height: 25.78px;
             max-height: 95px;
             max-width: 508px;
+          }
+          @include tinyMobileDown {
+            font-size: 1.0714rem;
+            line-height: 17.58px;
+            max-height: 66px;
+            padding: 13px 23px 13px 70px;
+          }
+        }
+        .guarantees__item br {
+          display: none;
+          @include tinyMobileDown {
+            display: inline;
           }
         }
         .guarantees__item:not(:first-child) {
@@ -1447,6 +1512,12 @@
           @include mobileDown {
             width: 94px;
             height: 95px;
+          }
+          @include tinyMobileDown {
+            width: 65px;
+            height: 66px;
+            transform: translate(-3%, -3%);
+            background-size: 35px;
           }
         }
         .guarantees__item:nth-child(1)::before {
