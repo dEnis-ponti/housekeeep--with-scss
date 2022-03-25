@@ -1540,11 +1540,17 @@
 .container_review {
   max-width: 1230px;
   padding: 0 15px;
+  @include tinyMobileDown {
+    padding: 0;
+  }
   & > * {
     padding: 0 15px;
     @include tabletDown {
       padding: 0 3px;
     }
+  }
+  & > *:not(.reviews__slider) {
+    padding: 0 15px;
   }
 }
 
@@ -1555,6 +1561,9 @@
   }
   @include mobileDown {
     margin-top: 0;
+  }
+  @include tinyMobileDown {
+    margin-top: -90+37px;
   }
   .reviews__background {
     .background__img {
@@ -1578,6 +1587,16 @@
     @include mobileDown {
       max-width: 500px;
     }
+    @include tinyMobileDown {
+      margin: 13px auto 0;
+      display: block;
+    }
+  }
+  .reviews__title,
+  .title__caption {
+    @include tinyMobileDown {
+      text-align: center;
+    }
   }
   .reviews__slider {
     margin-top: 70px;
@@ -1590,12 +1609,19 @@
       padding: 15px 3px 20px;
       margin-bottom: 66-20px;
     }
+    @include tinyMobileDown {
+      margin-top: 20px;
+      margin-bottom: 66-45px;
+    }
     .slider__wrapper {
       max-width: 370px;
       .slider__slide {
         max-width: 370px;
         @include tabletDown {
           max-width: 353px;
+        }
+        @include tinyMobileDown {
+          min-width: 289px;
         }
         .reviews__item {
           display: flex;
@@ -1604,9 +1630,15 @@
           box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.1);
           border-radius: 42px;
           padding: 28px;
+          @include tinyMobileDown {
+            padding: 28px 11px;
+          }
           .item__top {
             display: flex;
             justify-content: space-between;
+            @include tinyMobileDown {
+              padding-right: 27-11px;
+            }
             .reviewer-avatar {
               padding: 4px 10px;
               border-radius: 50%;
@@ -1615,9 +1647,16 @@
                 width: 82px;
                 height: 82px;
               }
+              @include tinyMobileDown {
+                width: 58px;
+                height: 58px;
+              }
             }
             .review-id {
               align-self: center;
+              @include tinyMobileDown {
+                margin-left: 11px;
+              }
               .reviewer-name {
                 @extend %fontReviewerName;
               }
@@ -1643,9 +1682,18 @@
             }
           }
           .item__bottom {
+            @include tinyMobileDown {
+              display: flex;
+              justify-content: center;
+            }
             .review-text {
               @extend %fontReviewText;
               margin-top: 27px;
+              @include tinyMobileDown {
+                display: inline-block;
+                max-width: 88%;
+                margin-top: 16px;
+              }
             }
           }
         }
@@ -1703,6 +1751,9 @@
       justify-content: center;
       align-items: center;
       margin-top: 42px;
+      @include tinyMobileDown {
+        margin-top: 15px;
+      }
       .pagination-button-next,
       .pagination-button-prev {
         position: inherit;
@@ -1750,6 +1801,9 @@
     background: #FFFFFF;
     border-radius: 20px;
     text-align: center;
+    @include tinyMobileDown {
+      padding: 12px 56px;
+    }
   }
   .discount__caption {
     @extend %fontDiscountCaption;
@@ -1757,11 +1811,19 @@
     @include mobileDown {
       margin-top: 36px;
     }
+    @include tinyMobileDown {
+      width: 65%;
+      text-align: center;
+      margin-top: 22px;
+    }
   }
   .callback-form_discount-positioning {
     margin-top: 67px;
     @include mobileDown {
       margin-top: 42px;
+    }
+    @include tinyMobileDown {
+      margin-top: 23px;
     }
   }
 }

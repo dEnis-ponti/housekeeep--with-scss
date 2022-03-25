@@ -41,6 +41,15 @@ new Swiper('.reviews__slider', {
       enabled: true,
       sticky: false,
       },
+    },
+    320 : {
+      centeredSlides: false,
+      slidesPerView: 1,
+      spaceBetween: 15,
+      freeMode: {
+      enabled: true,
+      sticky: false,
+      },
     }
   },
 });

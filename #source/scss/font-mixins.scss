@@ -232,20 +232,32 @@ $clrPerfectOrange:#FF5C00;
     @include mobileDown {
       @include fontValue("Roboto", 500, normal, 1.5714rem, 25.78px, $clrBlack);
     }
+    @include tinyMobileDown {
+      @include fontValue("Roboto", 500, normal, 1.0714rem, 17.58px, $clrBlack);
+    }
 }
 %fontReviewerName {
   @include fontValue("Roboto", 700, normal, 1.2857rem, 21px, $clrBlack);
     @include tabletDown {
       @include fontValue("Roboto", 700, normal, 1.2142rem, 19.92px, $clrBlack);
     }
+    @include tinyMobileDown {
+      @include fontValue("Roboto", 700, normal, 1.0714rem, 17.58px, $clrBlack);
+    }
 }
 %fontReviewerDate {
   @include fontValue("Roboto", 400, normal, 1.14285rem, 19px, #585858);
+    @include tinyMobileDown {
+      @include fontValue("Roboto", 400, normal, 0.9286rem, 15.23px, #585858);
+    }
 }
 %fontReviewText {
   @include fontValue("Roboto", 400, normal, 1.4285rem, 26px, $clrBlack);
     @include tabletDown {
       @include fontValue("Roboto", 400, normal, 1.2142rem, 21.79px, $clrBlack);
+    }
+    @include tinyMobileDown {
+      @include fontValue("Roboto", 400, normal, 1.0714rem, 19.23px, $clrBlack);
     }
 }
 %fontReviewPagination {
@@ -253,7 +265,13 @@ $clrPerfectOrange:#FF5C00;
 }
 %fontDiscountTitle {
   @include fontValue("Roboto", 700, normal, 1.5714rem, 26px, $clrBlack);
+    @include tinyMobileDown {
+      @include fontValue("Roboto", 700, normal, 1.0714rem, 17.58px, $clrBlack);
+    }
 }
 %fontDiscountCaption {
   @include fontValue("Roboto", 500, normal, 1.5714rem, 26px, $clrWhite);
+    @include tinyMobileDown {
+      @include fontValue("Roboto", 500, normal, 1.0714rem, 17.58px, $clrWhite);
+    }
 }
